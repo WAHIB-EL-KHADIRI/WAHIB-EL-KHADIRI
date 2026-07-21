@@ -39,7 +39,8 @@
 
 | Project | What it is |
 |---|---|
-| [open-seo](https://github.com/every-app/open-seo) (contributor) | Open-source SEO platform — fixed Docker self-host startup time ([#120](https://github.com/every-app/open-seo/pull/120)) |
+| [**AgentOS**](https://github.com/WAHIB-EL-KHADIRI/AgentOS) ⭐ | Runtime infrastructure for AI agents in Rust — lifecycle, supervision, secrets, and deterministic time-travel replay |
+| [open-seo](https://github.com/every-app/open-seo) (contributor) | Open-source SEO platform — Docker startup fix ([#120](https://github.com/every-app/open-seo/pull/120)) & AI-readiness audit checks ([#122](https://github.com/every-app/open-seo/pull/122)) |
 | [ai_content_factory](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory) | AI-powered content generation pipeline in Python |
 | [Task Manager](https://github.com/WAHIB-EL-KHADIRI/Gestionnaire-de-T-ches-en-PHP) | Task management app built with PHP |
 
