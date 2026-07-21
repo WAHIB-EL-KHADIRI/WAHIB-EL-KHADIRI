@@ -43,10 +43,10 @@
 | [ai_content_factory](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory) | AI-powered content generation pipeline in Python |
 | [Task Manager](https://github.com/WAHIB-EL-KHADIRI/Gestionnaire-de-T-ches-en-PHP) | Task management app built with PHP |
 
-## 📊 GitHub stats
+## 📊 My contribution activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=WAHIB-EL-KHADIRI&show_icons=true&theme=default&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" height="160">
+  <img src="https://ghchart.rshah.org/2E7D32/WAHIB-EL-KHADIRI" alt="Contribution graph" width="100%">
 </p>
 
 ---
