@@ -1,56 +1,117 @@
-<h1 align="center">Wahib EL KHADIRI</h1>
+<h1 align="center">Hi, I'm Wahib 👋</h1>
 
 <p align="center">
-  Software engineer from Morocco 🇲🇦 — I build infrastructure and tooling,
-  and I care more about what ships than what compiles.
+  <b>AI Engineer & Systems Developer from Morocco 🇲🇦</b>
 </p>
 
 <p align="center">
-  <a href="https://wahib-portfolio.netlify.app/"><img src="https://img.shields.io/badge/portfolio-2E7D32?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
+  I build agent infrastructure, developer tools, and the unglamorous layer
+  that makes them actually run in production.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/AI_Engineer-4C1D95?style=for-the-badge" alt="AI Engineer">
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust">
+  <img src="https://img.shields.io/badge/Open_Source-16A34A?style=for-the-badge&logo=github&logoColor=white" alt="Open Source">
+</p>
+
+<p align="center">
+  <a href="https://wahib-portfolio.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-2E7D32?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
   <a href="https://dev.to/wahib_el_khadiri_0"><img src="https://img.shields.io/badge/dev.to-0A0A0A?style=flat-square&logo=devdotto&logoColor=white" alt="dev.to"></a>
-  <a href="https://www.linkedin.com/in/wahib-el-khadiri-a54134283"><img src="https://img.shields.io/badge/linkedin-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:wahibelkhadiri06@gmail.com"><img src="https://img.shields.io/badge/email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://www.linkedin.com/in/wahib-el-khadiri-a54134283"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:wahibelkhadiri06@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
 ---
 
-## 🌀 Projects
+## 🚀 What I'm Building
 
-### Rust
-
-| Project | What it is |
-|---|---|
-| [**AgentOS**](https://github.com/WAHIB-EL-KHADIRI/AgentOS) | Runtime infrastructure for AI agents — supervised lifecycle, gRPC bus, secrets vault, and deterministic time-travel replay of agent traces. 10-crate workspace, MIT/Apache-2.0. |
-
-### Python
-
-| Project | What it is |
-|---|---|
-| [**AI Content OS**](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory) | Multi-agent content platform — 8 specialized agents, visual workflow engine, multi-provider model router. FastAPI + React. |
-
-### PHP
-
-| Project | What it is |
-|---|---|
-| [**TaskFlow Pro**](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro) | Task and project management system on a custom MVC with clean architecture — domain layer kept free of framework and persistence concerns. |
-
-### Contributions
-
-| Project | What I did |
-|---|---|
-| [every-app/open-seo](https://github.com/every-app/open-seo) | Fixed a Docker self-host build that rebuilt the image on every start ([#120](https://github.com/every-app/open-seo/pull/120)), and added AEO/agent-readiness audit checks — AI crawler directives, `llms.txt` validation, Markdown alternates ([#122](https://github.com/every-app/open-seo/pull/122)). |
-| [e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) | Added AgentOS to the curated list ([#1289](https://github.com/e2b-dev/awesome-ai-agents/pull/1289)). |
+- **Agent runtime infrastructure** — supervision, messaging, and deterministic replay for AI agents
+- **Multi-agent content systems** — orchestration across multiple model providers
+- **Developer tooling** — the parts that catch bugs before users do
+- **Open-source contributions** to projects other people depend on
 
 ---
 
-## 🛠️ Currently
+## 🛠️ Tech Stack
 
-| | |
+<p>
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind">
+</p>
+
+---
+
+## 📌 Featured Projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🦀 [AgentOS](https://github.com/WAHIB-EL-KHADIRI/AgentOS)
+
+Runtime infrastructure for AI agents — supervised lifecycle, gRPC message
+bus, secrets vault, and deterministic time-travel replay of agent traces.
+
+`Rust` · 10-crate workspace · MIT/Apache-2.0
+
+[![CI](https://github.com/WAHIB-EL-KHADIRI/AgentOS/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/AgentOS/actions/workflows/ci.yml)
+
+</td>
+<td width="50%" valign="top">
+
+### 🤖 [AI Content OS](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory)
+
+Multi-agent content platform — 8 specialized agents, visual workflow
+engine, and a router that picks the right model per task.
+
+`Python` · FastAPI + React
+
+[![CI](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory/actions/workflows/ci.yml)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### ✅ [TaskFlow Pro](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro)
+
+Task and project management on a custom MVC with clean architecture —
+the domain layer stays free of framework and persistence concerns.
+
+`PHP 8.1` · PSR-12 · PHPStan level 5
+
+[![CI](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro/actions/workflows/ci.yml)
+
+</td>
+<td width="50%" valign="top">
+
+### 🌐 [Portfolio](https://wahib-portfolio.netlify.app/)
+
+Personal site — projects, services, and a web CV.
+
+`React` · Vite · Netlify
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🤝 Open Source Contributions
+
+| Project | Contribution |
 |---|---|
-| **Building** | [AgentOS](https://github.com/WAHIB-EL-KHADIRI/AgentOS) — the operational layer around AI agents, not the agent logic |
-| **Contributing to** | [open-seo](https://github.com/every-app/open-seo) — open-source SEO auditing |
-| **Writing about** | release engineering, agent infrastructure, and the parts of shipping that don't show up in tutorials |
-| **Learning** | Rust systems programming and deterministic debugging |
+| [every-app/open-seo](https://github.com/every-app/open-seo) | Fixed a Docker self-host build that rebuilt the image on every start ([#120](https://github.com/every-app/open-seo/pull/120)) · Added AEO/agent-readiness audit checks: AI crawler directives, `llms.txt` validation, Markdown alternates ([#122](https://github.com/every-app/open-seo/pull/122)) |
+| [e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) | Added AgentOS to the curated list ([#1289](https://github.com/e2b-dev/awesome-ai-agents/pull/1289)) |
 
 ---
 
@@ -61,16 +122,6 @@
 
 ---
 
-## 🔧 Tech
-
-<p>
-  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP">
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+<p align="center">
+  <i>Open to collaboration on agent infrastructure and developer tooling.</i>
 </p>
