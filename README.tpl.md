@@ -11,6 +11,10 @@
 <h1 align="center">Hi, I'm Wahib 👋</h1>
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/main/assets/terminal.svg" alt="Terminal: whoami -- AI engineer and systems developer from Morocco, building agent infrastructure in Rust" width="820">
+</p>
+
+<p align="center">
   <b>AI Engineer & Systems Developer from Morocco 🇲🇦</b>
 </p>
 
