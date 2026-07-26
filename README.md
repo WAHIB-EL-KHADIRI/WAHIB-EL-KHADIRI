@@ -1,3 +1,13 @@
+<!--
+  This file is the SOURCE. README.md is generated from it.
+
+  Edit this file, never README.md -- the daily workflow in
+  .github/workflows/readme.yml overwrites README.md on every run.
+
+  Placeholders are filled by scripts/render_readme.py:
+    this year 173 8 3 4 4
+    2 2 days 2026-07-26
+-->
 <h1 align="center">Hi, I'm Wahib 👋</h1>
 
 <p align="center">
@@ -26,10 +36,25 @@
 
 ## 🚀 What I'm Building
 
-- **Agent runtime infrastructure** — supervision, messaging, and deterministic replay for AI agents
-- **Multi-agent content systems** — orchestration across multiple model providers
-- **Developer tooling** — the parts that catch bugs before users do
-- **Open-source contributions** to projects other people depend on
+- 🦀 **Agent runtime infrastructure** — supervision, messaging, and deterministic replay for AI agents
+- 🤖 **Multi-agent content systems** — orchestration across multiple model providers
+- 🧰 **Developer tooling** — the parts that catch bugs before users do
+- 🌍 **Open-source contributions** to projects other people depend on
+
+---
+
+## ⚡ Stats
+
+I joined GitHub this year and have since pushed **173** commits, opened
+**8** issues, and submitted **3** pull requests. My **4**
+public projects have earned **4** stars, and I've contributed to
+**2** repositories I don't own.
+
+Current commit streak: **2 days**.
+
+<sub>Public contributions only. Regenerated daily by
+<a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a GitHub Action</a>
+· last run 2026-07-26</sub>
 
 ---
 
@@ -50,60 +75,13 @@
 
 ---
 
-## 📌 Featured Projects
+## 📌 Projects
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🦀 [AgentOS](https://github.com/WAHIB-EL-KHADIRI/AgentOS)
-
-Runtime infrastructure for AI agents — supervised lifecycle, gRPC message
-bus, secrets vault, and deterministic time-travel replay of agent traces.
-
-`Rust` · 10-crate workspace · MIT/Apache-2.0
-
-[![CI](https://github.com/WAHIB-EL-KHADIRI/AgentOS/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/AgentOS/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/WAHIB-EL-KHADIRI/AgentOS?include_prereleases&style=flat-square&label=release&color=CD7F32)](https://github.com/WAHIB-EL-KHADIRI/AgentOS/releases)
-
-</td>
-<td width="50%" valign="top">
-
-### 🤖 [AI Content OS](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory)
-
-Multi-agent content platform — 8 specialized agents, visual workflow
-engine, and a router that picks the right model per task.
-
-`Python` · FastAPI + React
-
-[![CI](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory/actions/workflows/ci.yml)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### ✅ [TaskFlow Pro](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro)
-
-Task and project management on a custom MVC with clean architecture —
-the domain layer stays free of framework and persistence concerns.
-
-`PHP 8.1` · PSR-12 · PHPStan level 5
-
-[![CI](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro/actions/workflows/ci.yml)
-
-</td>
-<td width="50%" valign="top">
-
-### 🌐 [Portfolio](https://wahib-portfolio.netlify.app/)
-
-Personal site — projects, services, and a web CV.
-
-`React` · Vite · Netlify
-
-</td>
-</tr>
-</table>
+| Rust | Other (Python, PHP, TypeScript) |
+|---|---|
+| 🦀 [**AgentOS**](https://github.com/WAHIB-EL-KHADIRI/AgentOS) — runtime infrastructure for AI agents: supervised lifecycle, gRPC message bus, secrets vault, and deterministic time-travel replay of agent traces.<br><sub>10-crate workspace · MIT/Apache-2.0</sub><br>[![CI](https://github.com/WAHIB-EL-KHADIRI/AgentOS/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/AgentOS/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/WAHIB-EL-KHADIRI/AgentOS?include_prereleases&style=flat-square&label=release&color=CD7F32)](https://github.com/WAHIB-EL-KHADIRI/AgentOS/releases) | 🤖 [**AI Content OS**](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory) — multi-agent content platform: 8 specialized agents, a visual workflow engine, and a router that picks the right model per task.<br><sub>Python · FastAPI + React</sub><br>[![CI](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory/actions/workflows/ci.yml) |
+| 🔭 *Next up: a terminal UI for inspecting agent traces offline.* | ✅ [**TaskFlow Pro**](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro) — task and project management on a custom MVC with clean architecture; the domain layer stays free of framework and persistence concerns.<br><sub>PHP 8.1 · PSR-12 · PHPStan level 5</sub><br>[![CI](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro/actions/workflows/ci.yml) |
+|  | 🌐 [**Portfolio**](https://wahib-portfolio.netlify.app/) — personal site: projects, services, and a web CV.<br><sub>React · Vite · Netlify</sub> |
 
 ---
 
