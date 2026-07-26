@@ -1,83 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300" role="img" aria-label="Terminal session: whoami returns wahib, an AI engineer from Morocco building agent infrastructure in Rust">
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="320" viewBox="0 0 820 320" role="img" aria-label="Terminal session: whoami returns wahib, an AI engineer and systems developer from Morocco building agent infrastructure in Rust">
   <title>wahib@github</title>
 
   <style>
-    /* One shared 14s cycle so every line stays in sync and the loop is seamless. */
+    /* One shared 14s cycle keeps every line in sync and the loop seamless. */
     .line { animation-duration: 14s; animation-iteration-count: infinite; }
 
-    /* Commands type out character by character; steps() count matches the string length. */
-    .cmd1 { animation-name: type1; animation-timing-function: steps(8, end); }
-    .cmd2 { animation-name: type2; animation-timing-function: steps(15, end); }
-    .cmd3 { animation-name: type3; animation-timing-function: steps(35, end); }
+    /* Typing is split into an opening burst, a beat, then the rest. Constant
+       speed is what makes a fake terminal read as fake -- hands do not type
+       at a metronome. steps() counts match the characters in each segment. */
+    .cmd1 { animation-name: type1; }
+    .cmd2 { animation-name: type2; }
+    .cmd3 { animation-name: type3; }
+    .bar  { animation-name: fill; }
 
-    /* Real terminal output does not type -- it lands all at once. */
+    @keyframes type1 {
+      0%                                          { transform: translateX(-820px); animation-timing-function: steps(5, end); }
+      2%                                          { transform: translateX(-820px); animation-timing-function: steps(5, end); }
+      4.5%, 5.3%                                  { transform: translateX(-749px); animation-timing-function: steps(3, end); }
+      7%, 100%                                    { transform: translateX(-722px); }
+    }
+    @keyframes type2 {
+      0%, 15%                                     { transform: translateX(-820px); animation-timing-function: steps(6, end); }
+      18.5%, 19.3%                                { transform: translateX(-740px); animation-timing-function: steps(9, end); }
+      22%, 100%                                   { transform: translateX(-659px); }
+    }
+    @keyframes type3 {
+      0%, 28%                                     { transform: translateX(-820px); animation-timing-function: steps(14, end); }
+      33%, 34.2%                                  { transform: translateX(-668px); animation-timing-function: steps(21, end); }
+      40%, 100%                                   { transform: translateX(-479px); }
+    }
+    /* The bar fills in visible increments, the way a real progress bar redraws. */
+    @keyframes fill {
+      0%, 42%                                     { transform: translateX(-260px); animation-timing-function: steps(20, end); }
+      50%, 100%                                   { transform: translateX(0); }
+    }
+
+    /* Terminal output does not type -- it lands all at once. */
     .out  { opacity: 0; }
     .out1 { animation-name: show1; }
     .out2 { animation-name: show2; }
     .out3 { animation-name: show3; }
+    .done { animation-name: show3; }
+    @keyframes show1 { 0%, 8%  { opacity: 0; } 9%, 100%  { opacity: 1; } }
+    @keyframes show2 { 0%, 23% { opacity: 0; } 24%, 100% { opacity: 1; } }
+    @keyframes show3 { 0%, 51% { opacity: 0; } 52%, 100% { opacity: 1; } }
 
     .caret { animation: blink 1.06s steps(1, end) infinite; }
-
-    @keyframes type1 { 0%, 2% { transform: translateX(-820px); } 8%, 100% { transform: translateX(0); } }
-    @keyframes type2 { 0%, 16% { transform: translateX(-820px); } 23%, 100% { transform: translateX(0); } }
-    @keyframes type3 { 0%, 31% { transform: translateX(-820px); } 42%, 100% { transform: translateX(0); } }
-
-    @keyframes show1 { 0%, 9% { opacity: 0; } 12%, 100% { opacity: 1; } }
-    @keyframes show2 { 0%, 24% { opacity: 0; } 27%, 100% { opacity: 1; } }
-    @keyframes show3 { 0%, 43% { opacity: 0; } 47%, 100% { opacity: 1; } }
-
     @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
 
-    /* Honour a reader's reduced-motion preference: show the finished state. */
+    /* Show the finished frame to anyone who asked the OS for less motion. */
     @media (prefers-reduced-motion: reduce) {
       .line { animation: none; transform: translateX(0); }
-      .out  { animation: none; opacity: 1; }
+      .out { animation: none; opacity: 1; }
       .caret { animation: none; }
     }
 
-    text {
-      font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", Menlo, Consolas, monospace;
-      font-size: 15px;
-    }
+    text { font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", Menlo, Consolas, monospace; font-size: 15px; }
+    .chrome-text { font-size: 12px; }
+
+    /* Dark is the default; light follows the reader's OS preference. */
+    .win    { fill: #0d1117; stroke: #30363d; }
+    .bar-hd { fill: #161b22; stroke: #30363d; }
+    .track  { fill: #21262d; }
     .prompt { fill: #3fb950; }
     .input  { fill: #e6edf3; }
-    .muted  { fill: #8b949e; }
+    .muted, .chrome-text { fill: #8b949e; }
     .accent { fill: #58a6ff; }
-    .chrome { font-size: 12px; fill: #8b949e; }
+    .fillbar { fill: #3fb950; }
+
+    @media (prefers-color-scheme: light) {
+      .win    { fill: #ffffff; stroke: #d0d7de; }
+      .bar-hd { fill: #f6f8fa; stroke: #d0d7de; }
+      .track  { fill: #eaeef2; }
+      .prompt, .fillbar { fill: #1a7f37; }
+      .input  { fill: #1f2328; }
+      .muted, .chrome-text { fill: #656d76; }
+      .accent { fill: #0969da; }
+    }
   </style>
 
   <defs>
-    <clipPath id="w1"><rect class="line cmd1" width="820" height="300"/></clipPath>
-    <clipPath id="w2"><rect class="line cmd2" width="820" height="300"/></clipPath>
-    <clipPath id="w3"><rect class="line cmd3" width="820" height="300"/></clipPath>
+    <clipPath id="w1"><rect class="line cmd1" width="820" height="320"/></clipPath>
+    <clipPath id="w2"><rect class="line cmd2" width="820" height="320"/></clipPath>
+    <clipPath id="w3"><rect class="line cmd3" width="820" height="320"/></clipPath>
+    <clipPath id="wb"><rect class="line bar" width="260" height="320"/></clipPath>
   </defs>
 
-  <!-- Window -->
-  <rect x="0.5" y="0.5" width="819" height="299" rx="10" fill="#0d1117" stroke="#30363d"/>
-  <path d="M0.5 10.5a10 10 0 0 1 10-10h799a10 10 0 0 1 10 10V37H0.5z" fill="#161b22" stroke="#30363d"/>
+  <rect class="win" x="0.5" y="0.5" width="819" height="319" rx="10"/>
+  <path class="bar-hd" d="M0.5 10.5a10 10 0 0 1 10-10h799a10 10 0 0 1 10 10V37H0.5z"/>
   <circle cx="26" cy="19" r="6" fill="#ff5f56"/>
   <circle cx="48" cy="19" r="6" fill="#ffbd2e"/>
   <circle cx="70" cy="19" r="6" fill="#27c93f"/>
-  <text class="chrome" x="410" y="23" text-anchor="middle">wahib@github — zsh</text>
+  <text class="chrome-text" x="410" y="23" text-anchor="middle">wahib@github — zsh</text>
 
-  <!-- $ whoami -->
   <g clip-path="url(#w1)">
-    <text x="26" y="76"><tspan class="prompt">$</tspan><tspan class="input" dx="9">whoami</tspan></text>
+    <text x="26" y="72"><tspan class="prompt">$</tspan><tspan class="input" dx="9">whoami</tspan></text>
   </g>
-  <text class="out out1 line muted" x="26" y="104">wahib · AI engineer · systems developer · Morocco</text>
+  <text class="out out1 line muted" x="26" y="100">wahib · AI engineer · systems developer · Morocco</text>
 
-  <!-- $ cat focus.txt -->
   <g clip-path="url(#w2)">
-    <text x="26" y="146"><tspan class="prompt">$</tspan><tspan class="input" dx="9">cat focus.txt</tspan></text>
+    <text x="26" y="140"><tspan class="prompt">$</tspan><tspan class="input" dx="9">cat focus.txt</tspan></text>
   </g>
-  <text class="out out2 line muted" x="26" y="174">agent infrastructure, developer tools, and the layer that keeps them running</text>
+  <text class="out out2 line muted" x="26" y="168">agent infrastructure, developer tools, and the layer that keeps them running</text>
 
-  <!-- $ agentos run -->
   <g clip-path="url(#w3)">
-    <text x="26" y="216"><tspan class="prompt">$</tspan><tspan class="input" dx="9">agentos run --agent my_agent.toml</tspan></text>
+    <text x="26" y="208"><tspan class="prompt">$</tspan><tspan class="input" dx="9">agentos run --agent my_agent.toml</tspan></text>
   </g>
-  <text class="out out3 line accent" x="26" y="244">▸ supervised · journaled · deterministically replayable</text>
 
-  <!-- Idle prompt -->
-  <text x="26" y="278"><tspan class="prompt">$</tspan><tspan class="input caret" dx="9">▌</tspan></text>
+  <rect class="track" x="26" y="224" width="260" height="12" rx="6"/>
+  <g clip-path="url(#wb)">
+    <rect class="fillbar" x="26" y="224" width="260" height="12" rx="6"/>
+  </g>
+  <text class="out done line muted" x="300" y="234">supervisor up · 3 agents</text>
+
+  <text class="out out3 line accent" x="26" y="266">▸ supervised · journaled · deterministically replayable</text>
+
+  <text x="26" y="300"><tspan class="prompt">$</tspan><tspan class="input caret" dx="9">▌</tspan></text>
 </svg>
