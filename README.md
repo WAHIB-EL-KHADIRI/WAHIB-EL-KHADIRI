@@ -1,13 +1,5 @@
-<!--
-  This file is the SOURCE. README.md is generated from it.
-
-  Edit this file, never README.md -- the daily workflow in
-  .github/workflows/readme.yml overwrites README.md on every run.
-
-  Placeholders are filled by scripts/render_readme.py:
-    this year 106 8 3 4 4
-    2 2 days 2026-07-26
--->
+<!-- Generated from README.tpl.md by scripts/render_readme.py.
+     Edits here are overwritten on the next scheduled run. -->
 <h1 align="center">Hi, I'm Wahib 👋</h1>
 
 <p align="center">
@@ -45,7 +37,7 @@
 
 ## ⚡ Stats
 
-I joined GitHub this year and have since pushed **106** commits, opened
+I joined GitHub this year and have since pushed **108** commits, opened
 **8** issues, and submitted **3** pull requests. My **4**
 public projects have earned **4** stars, and I've contributed to
 **2** repositories I don't own.
