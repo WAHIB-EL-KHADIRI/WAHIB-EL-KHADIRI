@@ -5,7 +5,7 @@
   .github/workflows/readme.yml overwrites README.md on every run.
 
   Placeholders are filled by scripts/render_readme.py:
-    this year 173 8 3 4 4
+    this year 106 8 3 4 4
     2 2 days 2026-07-26
 -->
 <h1 align="center">Hi, I'm Wahib 👋</h1>
@@ -45,7 +45,7 @@
 
 ## ⚡ Stats
 
-I joined GitHub this year and have since pushed **173** commits, opened
+I joined GitHub this year and have since pushed **106** commits, opened
 **8** issues, and submitted **3** pull requests. My **4**
 public projects have earned **4** stars, and I've contributed to
 **2** repositories I don't own.
