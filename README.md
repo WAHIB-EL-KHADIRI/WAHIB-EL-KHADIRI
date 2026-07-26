@@ -64,6 +64,7 @@ bus, secrets vault, and deterministic time-travel replay of agent traces.
 `Rust` · 10-crate workspace · MIT/Apache-2.0
 
 [![CI](https://github.com/WAHIB-EL-KHADIRI/AgentOS/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/AgentOS/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/WAHIB-EL-KHADIRI/AgentOS?include_prereleases&style=flat-square&label=release&color=CD7F32)](https://github.com/WAHIB-EL-KHADIRI/AgentOS/releases)
 
 </td>
 <td width="50%" valign="top">
