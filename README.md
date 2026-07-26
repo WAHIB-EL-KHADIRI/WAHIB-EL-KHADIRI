@@ -1,7 +1,7 @@
 <h1 align="center">Hi there, I'm Wahib El Khadiri 👋</h1>
 
 <p align="center">
-  💻 Full Stack Software Developer from Morocco 🇲🇦 — building web &amp; mobile applications
+  💻 Polyglot Software Engineer from Morocco 🇲🇦 — Rust, TypeScript, Python, PHP, Go
 </p>
 
 <p align="center">
