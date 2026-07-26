@@ -21,6 +21,7 @@ import datetime as dt
 import json
 import os
 import pathlib
+import re
 import sys
 import time
 import urllib.error
@@ -243,7 +244,18 @@ def main() -> int:
         "UPDATED": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d"),
     }
 
-    rendered = template
+    # The template opens with a note aimed at whoever edits it. That note is
+    # wrong once copied into the output, so swap it for one aimed at readers.
+    template = re.sub(r"\A<!--.*?-->
+", "", template, count=1, flags=re.DOTALL)
+    banner = (
+        "<!-- Generated from README.tpl.md by scripts/render_readme.py.
+"
+        "     Edits here are overwritten on the next scheduled run. -->
+"
+    )
+
+    rendered = banner + template
     for key, value in values.items():
         rendered = rendered.replace("{{" + key + "}}", value)
 
