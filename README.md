@@ -3,6 +3,10 @@
 <h1 align="center">Hi, I'm Wahib 👋</h1>
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/main/assets/terminal.svg" alt="Terminal: whoami -- AI engineer and systems developer from Morocco, building agent infrastructure in Rust" width="820">
+</p>
+
+<p align="center">
   <b>AI Engineer & Systems Developer from Morocco 🇲🇦</b>
 </p>
 
@@ -37,7 +41,7 @@
 
 ## ⚡ Stats
 
-I joined GitHub this year and have since pushed **108** commits, opened
+I joined GitHub this year and have since pushed **110** commits, opened
 **8** issues, and submitted **3** pull requests. My **4**
 public projects have earned **4** stars, and I've contributed to
 **2** repositories I don't own.
