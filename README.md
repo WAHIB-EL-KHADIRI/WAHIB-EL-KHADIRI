@@ -28,6 +28,7 @@
 
 ## 🤝 Contributions
 
+- **[Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre)** — ✅ merged: fixed a CLI config-precedence bug so `OPENSRE_INTERACTIVE` and `config.yml` are honored when no `--interactive` flag is given, with a regression test ([#4387](https://github.com/Tracer-Cloud/opensre/pull/4387))
 - **[every-app/open-seo](https://github.com/every-app/open-seo)** — fixed a self-host build that rebuilt its Docker image on every start ([#120](https://github.com/every-app/open-seo/pull/120)); added agent-readiness audits: AI crawler directives, `llms.txt`, Markdown alternates ([#122](https://github.com/every-app/open-seo/pull/122))
 - **[e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents)** — added AgentOS to the list ([#1289](https://github.com/e2b-dev/awesome-ai-agents/pull/1289))
 
@@ -39,8 +40,8 @@
 ---
 
 <p align="center">
-  <b>112</b> commits · <b>7</b> pull requests · <b>8</b> issues ·
-  <b>4</b> stars across <b>4</b> projects · <b>4 days</b> streak
+  <b>112</b> commits · <b>9</b> pull requests · <b>8</b> issues ·
+  <b>4</b> stars across <b>4</b> projects · <b>5 days</b> streak
 </p>
 
 <p align="center">
