@@ -28,6 +28,9 @@
 
 ## 🤝 Contributions
 
+- **[vprusso/toqito](https://github.com/vprusso/toqito)** — ✅ merged: vectorized the depolarizing-channel Kraus-operator construction (dropped the `d²` nested-loop allocations), verified identical output across dims/parameters ([#1921](https://github.com/vprusso/toqito/pull/1921))
+- **[thingctx/thingctx](https://github.com/thingctx/thingctx)** — ✅ merged: supply-chain hardening — pinned every third-party GitHub Action to a commit SHA across CI/release workflows ([#127](https://github.com/thingctx/thingctx/pull/127))
+- **[RonaldHensbergen/composable-data-stack](https://github.com/RonaldHensbergen/composable-data-stack)** — ✅ merged: removed an unreachable default-credential security branch (dead code / false coverage) with regression tests ([#344](https://github.com/RonaldHensbergen/composable-data-stack/pull/344))
 - **[Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre)** — ✅ merged: fixed a CLI config-precedence bug so `OPENSRE_INTERACTIVE` and `config.yml` are honored when no `--interactive` flag is given, with a regression test ([#4387](https://github.com/Tracer-Cloud/opensre/pull/4387))
 - **[every-app/open-seo](https://github.com/every-app/open-seo)** — fixed a self-host build that rebuilt its Docker image on every start ([#120](https://github.com/every-app/open-seo/pull/120)); added agent-readiness audits: AI crawler directives, `llms.txt`, Markdown alternates ([#122](https://github.com/every-app/open-seo/pull/122))
 - **[e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents)** — added AgentOS to the list ([#1289](https://github.com/e2b-dev/awesome-ai-agents/pull/1289))
@@ -40,8 +43,8 @@
 ---
 
 <p align="center">
-  <b>127</b> commits · <b>26</b> pull requests · <b>8</b> issues ·
-  <b>3</b> stars across <b>4</b> projects · <b>0 days</b> streak
+  <b>128</b> commits · <b>26</b> pull requests · <b>8</b> issues ·
+  <b>3</b> stars across <b>4</b> projects · <b>1 day</b> streak
 </p>
 
 <p align="center">
