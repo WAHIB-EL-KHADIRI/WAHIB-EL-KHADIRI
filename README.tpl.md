@@ -37,6 +37,10 @@
 
 ## 🤝 Contributions
 
+- **[PrefectHQ/prefect](https://github.com/PrefectHQ/prefect)** — release-workflow hardening: the release ref was expanded into two shell bodies in the jobs that publish to PyPI, one of them holding `id-token: write` for Trusted Publishing ([#22882](https://github.com/PrefectHQ/prefect/pull/22882))
+- **[dbt-labs/dbt-core](https://github.com/dbt-labs/dbt-core)** — same class in the workflow that publishes to GitHub, PyPI and Docker: dispatch inputs expanded unquoted into an `echo` and into a command substitution ([#15994](https://github.com/dbt-labs/dbt-core/pull/15994))
+- **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — release workflow: the version input reached a command substitution and a step carrying `GITHUB_TOKEN` ([#8375](https://github.com/sqlfluff/sqlfluff/pull/8375))
+- **[sktime/pytorch-forecasting](https://github.com/sktime/pytorch-forecasting)** — PyPI release workflow: tag name expanded into the tag check that gates the build, plus a least-privilege `permissions:` block the file had never declared ([#2385](https://github.com/sktime/pytorch-forecasting/pull/2385))
 - **[vprusso/toqito](https://github.com/vprusso/toqito)** — ✅ merged: vectorized the depolarizing-channel Kraus-operator construction (dropped the `d²` nested-loop allocations), verified identical output across dims/parameters ([#1921](https://github.com/vprusso/toqito/pull/1921))
 - **[thingctx/thingctx](https://github.com/thingctx/thingctx)** — ✅ merged: supply-chain hardening — pinned every third-party GitHub Action to a commit SHA across CI/release workflows ([#127](https://github.com/thingctx/thingctx/pull/127))
 - **[RonaldHensbergen/composable-data-stack](https://github.com/RonaldHensbergen/composable-data-stack)** — ✅ merged: removed an unreachable default-credential security branch (dead code / false coverage) with regression tests ([#344](https://github.com/RonaldHensbergen/composable-data-stack/pull/344))
