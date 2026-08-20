@@ -25,6 +25,11 @@
   <a href="mailto:wahibelkhadiri06@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/WAHIB-EL-KHADIRI/AgentOS"><img src="https://img.shields.io/github/stars/WAHIB-EL-KHADIRI/AgentOS?style=for-the-badge&logo=github&label=Star%20AgentOS&color=CD7F32&labelColor=0D1117" alt="Star AgentOS on GitHub"></a>
+  <a href="https://github.com/WAHIB-EL-KHADIRI?tab=followers"><img src="https://img.shields.io/github/followers/WAHIB-EL-KHADIRI?style=for-the-badge&logo=github&label=Follow&color=2E7D32&labelColor=0D1117" alt="Follow WAHIB-EL-KHADIRI on GitHub"></a>
+</p>
+
 ---
 
 ## 📌 Projects
@@ -52,6 +57,14 @@
 
 - [I Shipped My First Rust Release, and CI Turned Red Twice in 20 Minutes](https://dev.to/wahib_el_khadiri_0/i-shipped-my-first-rust-release-and-ci-turned-red-twice-in-20-minutes-31hp)
 - [I Taught an Open-Source SEO Tool to Check Whether Your Site Is Readable by AI Agents](https://dev.to/wahib_el_khadiri_0/i-taught-an-open-source-seo-tool-to-check-whether-your-site-is-readable-by-ai-agents-15i3)
+
+## 🧩 Contribute
+
+AgentOS is open to contributors: issues labelled
+[`good first issue`](https://github.com/WAHIB-EL-KHADIRI/AgentOS/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+and [`help wanted`](https://github.com/WAHIB-EL-KHADIRI/AgentOS/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+cover Rust internals, CLI ergonomics and docs. Design questions live in
+[Discussions](https://github.com/WAHIB-EL-KHADIRI/AgentOS/discussions).
 
 ---
 
