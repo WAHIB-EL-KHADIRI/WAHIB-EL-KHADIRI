@@ -32,6 +32,20 @@
 
 ---
 
+## 💼 Open to work
+
+I harden CI and release pipelines — the `${{ ... }}` injection class, action
+SHA pinning, least-privilege `permissions:`, SLSA provenance — and I build
+agent infrastructure in Rust. The record below is 14 merged pull requests into
+repositories I don't own, each one linked to its diff.
+
+**Looking for:** remote or contract work in DevSecOps, software supply-chain
+security, and AI-agent infrastructure. Based in Morocco, comfortable across
+EMEA and US-morning hours.
+
+**Fastest way to reach me:** [wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
+· [LinkedIn](https://www.linkedin.com/in/wahib-el-khadiri-a54134283)
+
 ## 📌 Projects
 
 | Project | Stack |
