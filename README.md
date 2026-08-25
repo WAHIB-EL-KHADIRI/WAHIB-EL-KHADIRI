@@ -75,8 +75,8 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>177</b> commits · <b>75</b> pull requests · <b>11</b> issues ·
-  <b>7</b> stars across <b>4</b> projects · <b>3 days</b> streak
+  <b>179</b> commits · <b>81</b> pull requests · <b>12</b> issues ·
+  <b>7</b> stars across <b>4</b> projects · <b>4 days</b> streak
 </p>
 
 <p align="center">
