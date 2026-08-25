@@ -34,16 +34,30 @@
 
 ## 🤝 Contributions
 
-- **[PrefectHQ/prefect](https://github.com/PrefectHQ/prefect)** — release-workflow hardening: the release ref was expanded into two shell bodies in the jobs that publish to PyPI, one of them holding `id-token: write` for Trusted Publishing ([#22882](https://github.com/PrefectHQ/prefect/pull/22882))
-- **[dbt-labs/dbt-core](https://github.com/dbt-labs/dbt-core)** — same class in the workflow that publishes to GitHub, PyPI and Docker: dispatch inputs expanded unquoted into an `echo` and into a command substitution ([#15994](https://github.com/dbt-labs/dbt-core/pull/15994))
+14 merged pull requests into 11 repositories I don't own. The through-line is
+release-pipeline security: `${{ ... }}` expansions reaching a shell in workflows
+that carry publishing credentials.
+
+**Release-pipeline hardening**
+
+- **[PrefectHQ/prefect](https://github.com/PrefectHQ/prefect)** — ✅ merged: the release ref was expanded into two shell bodies in the jobs that publish to PyPI, one of them holding `id-token: write` for Trusted Publishing ([#22882](https://github.com/PrefectHQ/prefect/pull/22882))
+- **[thingctx/thingctx](https://github.com/thingctx/thingctx)** — ✅ merged: pinned every third-party GitHub Action to a commit SHA across CI and release workflows ([#127](https://github.com/thingctx/thingctx/pull/127))
+- **[dbt-labs/dbt-core](https://github.com/dbt-labs/dbt-core)** — the workflow that publishes to GitHub, PyPI and Docker: dispatch inputs expanded unquoted into an `echo` and into a command substitution ([#15994](https://github.com/dbt-labs/dbt-core/pull/15994))
 - **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — release workflow: the version input reached a command substitution and a step carrying `GITHUB_TOKEN` ([#8375](https://github.com/sqlfluff/sqlfluff/pull/8375))
 - **[sktime/pytorch-forecasting](https://github.com/sktime/pytorch-forecasting)** — PyPI release workflow: tag name expanded into the tag check that gates the build, plus a least-privilege `permissions:` block the file had never declared ([#2385](https://github.com/sktime/pytorch-forecasting/pull/2385))
+
+**Correctness, performance and dead code**
+
+- **[sktime/sktime](https://github.com/sktime/sktime)** — ✅ merged: removed mutable default arguments (B006) from the ConvTimeNet backbones ([#10730](https://github.com/sktime/sktime/pull/10730))
 - **[vprusso/toqito](https://github.com/vprusso/toqito)** — ✅ merged: vectorized the depolarizing-channel Kraus-operator construction (dropped the `d²` nested-loop allocations), verified identical output across dims/parameters ([#1921](https://github.com/vprusso/toqito/pull/1921))
-- **[thingctx/thingctx](https://github.com/thingctx/thingctx)** — ✅ merged: supply-chain hardening — pinned every third-party GitHub Action to a commit SHA across CI/release workflows ([#127](https://github.com/thingctx/thingctx/pull/127))
-- **[RonaldHensbergen/composable-data-stack](https://github.com/RonaldHensbergen/composable-data-stack)** — ✅ merged: removed an unreachable default-credential security branch (dead code / false coverage) with regression tests ([#344](https://github.com/RonaldHensbergen/composable-data-stack/pull/344))
 - **[Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre)** — ✅ merged: fixed a CLI config-precedence bug so `OPENSRE_INTERACTIVE` and `config.yml` are honored when no `--interactive` flag is given, with a regression test ([#4387](https://github.com/Tracer-Cloud/opensre/pull/4387))
-- **[every-app/open-seo](https://github.com/every-app/open-seo)** — fixed a self-host build that rebuilt its Docker image on every start ([#120](https://github.com/every-app/open-seo/pull/120)); added agent-readiness audits: AI crawler directives, `llms.txt`, Markdown alternates ([#122](https://github.com/every-app/open-seo/pull/122))
-- **[e2b-dev/awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents)** — added AgentOS to the list ([#1289](https://github.com/e2b-dev/awesome-ai-agents/pull/1289))
+- **[RonaldHensbergen/composable-data-stack](https://github.com/RonaldHensbergen/composable-data-stack)** — ✅ merged: removed an unreachable default-credential security branch (dead code / false coverage) with regression tests ([#344](https://github.com/RonaldHensbergen/composable-data-stack/pull/344), [#345](https://github.com/RonaldHensbergen/composable-data-stack/pull/345))
+- **[vedaant00/opendot](https://github.com/vedaant00/opendot)** — ✅ merged: `grep` no longer crashes on paths outside the workspace; `list_files` honors the shared ignore set ([#73](https://github.com/vedaant00/opendot/pull/73), [#61](https://github.com/vedaant00/opendot/pull/61))
+- **[masumi-network/Citadel](https://github.com/masumi-network/Citadel)** — ✅ merged: dropped a dead `session_trace` re-export facade, then covered the notification gateways and logging utils ([#130](https://github.com/masumi-network/Citadel/pull/130), [#131](https://github.com/masumi-network/Citadel/pull/131))
+- **[skodaconnect/myskoda](https://github.com/skodaconnect/myskoda)** — ✅ merged: added the missing `SoftwareStatus` enum members so updates in progress stop failing to parse ([#641](https://github.com/skodaconnect/myskoda/pull/641))
+- **[abduznik/instrumation](https://github.com/abduznik/instrumation)** — ✅ merged: the duplicate-address scanner no longer breaks on empty or `None` input ([#137](https://github.com/abduznik/instrumation/pull/137))
+- **[mldsveda/PyScrappy](https://github.com/mldsveda/PyScrappy)** — ✅ merged: aligned the GitHub scraper's default result count with the MCP tool ([#82](https://github.com/mldsveda/PyScrappy/pull/82))
+- **[every-app/open-seo](https://github.com/every-app/open-seo)** — agent-readiness audits: AI crawler directives, `llms.txt`, Markdown alternates ([#122](https://github.com/every-app/open-seo/pull/122))
 
 ## ✍️ Writing
 
