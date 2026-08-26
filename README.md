@@ -89,12 +89,12 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>179</b> commits · <b>81</b> pull requests · <b>12</b> issues ·
-  <b>7</b> stars across <b>4</b> projects · <b>4 days</b> streak
+  <b>183</b> commits · <b>92</b> pull requests · <b>12</b> issues ·
+  <b>7</b> stars across <b>4</b> projects · <b>5 days</b> streak
 </p>
 
 <p align="center">
-  <sub>Public contributions, counted 2026-08-25 by
+  <sub>Public contributions, counted 2026-08-26 by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a>
-  · joined GitHub this year · contributor to 20 repos I don't own</sub>
+  · joined GitHub this year · contributor to 24 repos I don't own</sub>
 </p>
