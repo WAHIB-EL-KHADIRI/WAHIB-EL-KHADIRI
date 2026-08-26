@@ -24,25 +24,32 @@
 
 ---
 
-## 💼 Open to work
+## 💼 Open to Work — DevSecOps & AI Infrastructure
 
-I harden CI and release pipelines — the `${{ ... }}` injection class, action
-SHA pinning, least-privilege `permissions:`, SLSA provenance — and I build
-agent infrastructure in Rust. The record below is 14 merged pull requests into
-repositories I don't own, each one linked to its diff.
+I secure software supply chains and build reliable infrastructure for AI agents.
 
-**Looking for:** remote or contract work in DevSecOps, software supply-chain
-security, and AI-agent infrastructure. Based in Morocco, comfortable across
-EMEA and US-morning hours.
+My focus is **DevSecOps, GitHub Actions security, software supply-chain security, and AI-agent infrastructure in Rust** — turning security findings into concrete, reviewable engineering changes.
 
-**Also available for scoped audits.** I review GitHub Actions and release
-workflows for the flaws above, and every finding ships as a reviewable pull
-request rather than a PDF — that is the part most audits skip. Free first look
-at one public repository, no obligation. Paid engagements start at $450 for a
-single repo; $1,500 for a full release pipeline.
+**Core areas:**
 
-**Fastest way to reach me:** [wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
-· [LinkedIn](https://www.linkedin.com/in/wahib-el-khadiri-a54134283)
+* GitHub Actions & CI/CD hardening
+* `${{ ... }}` expression and workflow injection
+* Action SHA pinning & dependency integrity
+* Least-privilege `permissions:` and credential isolation
+* Release security, artifact integrity & SLSA provenance
+* AI-agent runtime, tool & execution security
+* Production-grade agent infrastructure in Rust
+
+**Open-source track record:**
+14 merged pull requests across repositories I don't own, with each contribution backed by a reviewable diff.
+
+I'm open to **remote and contract opportunities** with teams building security-critical software, developer infrastructure, AI platforms, and agentic systems.
+
+I don't just report vulnerabilities — **I help engineer the fix and ship it as a reviewable pull request.**
+
+📍 Morocco · 🌍 EMEA / US-friendly
+📧 [wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
+🔗 LinkedIn: linkedin.com/in/wahib-el-khadiri-a54134283
 
 ## 📌 Projects
 
