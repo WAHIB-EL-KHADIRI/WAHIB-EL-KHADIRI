@@ -35,6 +35,12 @@ repositories I don't own, each one linked to its diff.
 security, and AI-agent infrastructure. Based in Morocco, comfortable across
 EMEA and US-morning hours.
 
+**Also available for scoped audits.** I review GitHub Actions and release
+workflows for the flaws above, and every finding ships as a reviewable pull
+request rather than a PDF — that is the part most audits skip. Free first look
+at one public repository, no obligation. Paid engagements start at $450 for a
+single repo; $1,500 for a full release pipeline.
+
 **Fastest way to reach me:** [wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
 · [LinkedIn](https://www.linkedin.com/in/wahib-el-khadiri-a54134283)
 
