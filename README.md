@@ -24,32 +24,25 @@
 
 ---
 
-## 💼 Open to Work — DevSecOps & AI Infrastructure
+## 💼 Open to work
 
-I secure software supply chains and build reliable infrastructure for AI agents.
+I harden CI and release pipelines — the `${{ ... }}` injection class, action
+SHA pinning, least-privilege `permissions:`, SLSA provenance — and I build
+agent infrastructure in Rust. The record below is 14 merged pull requests into
+repositories I don't own, each one linked to its diff.
 
-My focus is **DevSecOps, GitHub Actions security, software supply-chain security, and AI-agent infrastructure in Rust** — turning security findings into concrete, reviewable engineering changes.
+**Looking for:** remote or contract work in DevSecOps, software supply-chain
+security, and AI-agent infrastructure. Based in Morocco, comfortable across
+EMEA and US-morning hours.
 
-**Core areas:**
+**Also available for scoped audits.** I review GitHub Actions and release
+workflows for the flaws above, and every finding ships as a reviewable pull
+request rather than a PDF — that is the part most audits skip. Free first look
+at one public repository, no obligation. Paid engagements start at $450 for a
+single repo; $1,500 for a full release pipeline.
 
-* GitHub Actions & CI/CD hardening
-* `${{ ... }}` expression and workflow injection
-* Action SHA pinning & dependency integrity
-* Least-privilege `permissions:` and credential isolation
-* Release security, artifact integrity & SLSA provenance
-* AI-agent runtime, tool & execution security
-* Production-grade agent infrastructure in Rust
-
-**Open-source track record:**
-14 merged pull requests across repositories I don't own, with each contribution backed by a reviewable diff.
-
-I'm open to **remote and contract opportunities** with teams building security-critical software, developer infrastructure, AI platforms, and agentic systems.
-
-I don't just report vulnerabilities — **I help engineer the fix and ship it as a reviewable pull request.**
-
-📍 Morocco · 🌍 EMEA / US-friendly
-📧 [wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
-🔗 LinkedIn: linkedin.com/in/wahib-el-khadiri-a54134283
+**Fastest way to reach me:** [wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
+· [LinkedIn](https://www.linkedin.com/in/wahib-el-khadiri-a54134283)
 
 ## 📌 Projects
 
@@ -102,12 +95,12 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>185</b> commits · <b>94</b> pull requests · <b>12</b> issues ·
+  <b>192</b> commits · <b>94</b> pull requests · <b>12</b> issues ·
   <b>7</b> stars across <b>4</b> projects · <b>5 days</b> streak
 </p>
 
 <p align="center">
-  <sub>Public contributions, counted 2026-08-26 by
+  <sub>Public contributions, counted 2026-08-27 by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a>
   · joined GitHub this year · contributor to 25 repos I don't own</sub>
 </p>
