@@ -24,24 +24,12 @@
 
 ---
 
-## 💼 Open to work
+## 💼 Available for work
 
-I harden CI and release pipelines — the `${{ ... }}` injection class, action
-SHA pinning, least-privilege `permissions:`, SLSA provenance — and I build
-agent infrastructure in Rust. The record below is 14 merged pull requests into
-repositories I don't own, each one linked to its diff.
+Open to remote and contract work in DevSecOps, software supply-chain security,
+and AI-agent infrastructure. Based in Morocco, across EMEA and US-morning hours.
 
-**Looking for:** remote or contract work in DevSecOps, software supply-chain
-security, and AI-agent infrastructure. Based in Morocco, comfortable across
-EMEA and US-morning hours.
-
-**Also available for scoped audits.** I review GitHub Actions and release
-workflows for the flaws above, and every finding ships as a reviewable pull
-request rather than a PDF — that is the part most audits skip. Free first look
-at one public repository, no obligation. Paid engagements start at $450 for a
-single repo; $1,500 for a full release pipeline.
-
-**Fastest way to reach me:** [wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
+[wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
 · [LinkedIn](https://www.linkedin.com/in/wahib-el-khadiri-a54134283)
 
 ## 📌 Projects
