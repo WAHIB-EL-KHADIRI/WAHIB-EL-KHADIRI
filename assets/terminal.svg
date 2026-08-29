@@ -96,12 +96,12 @@
   <g clip-path="url(#w1)">
     <text x="26" y="72"><tspan class="prompt">$</tspan><tspan class="input" dx="9">whoami</tspan></text>
   </g>
-  <text class="out out1 line muted" x="26" y="100">wahib · AI engineer · systems developer · Morocco</text>
+  <text class="out out1 line muted" x="26" y="100">wahib · CI/CD and supply-chain security · Rust systems · Morocco</text>
 
   <g clip-path="url(#w2)">
     <text x="26" y="140"><tspan class="prompt">$</tspan><tspan class="input" dx="9">cat focus.txt</tspan></text>
   </g>
-  <text class="out out2 line muted" x="26" y="168">agent infrastructure, developer tools, and the layer that keeps them running</text>
+  <text class="out out2 line muted" x="26" y="168">hardening the release pipelines that hold everyone else&#39;s publishing keys</text>
 
   <g clip-path="url(#w3)">
     <text x="26" y="208"><tspan class="prompt">$</tspan><tspan class="input" dx="9">agentos run --agent my_agent.toml</tspan></text>
