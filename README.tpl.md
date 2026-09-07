@@ -42,7 +42,7 @@ and AI-agent infrastructure. Based in Morocco, across EMEA and US-morning hours.
 
 ## 🔒 Work in other people's repositories
 
-**14 merged pull requests into 11 repositories I don't own**, reviewed and
+**15 merged pull requests into 12 repositories I don't own**, reviewed and
 accepted by their maintainers. The through-line is release-pipeline security:
 `${{ ... }}` is pasted into a shell as text before bash parses it, so a tag name
 or dispatch input stops being data and becomes part of the program — almost
@@ -53,7 +53,7 @@ always in the one job holding the publishing credentials.
 - **[PrefectHQ/prefect](https://github.com/PrefectHQ/prefect)** — ✅ merged: the release ref was expanded into two shell bodies in the jobs that publish to PyPI, one of them holding `id-token: write` for Trusted Publishing ([#22882](https://github.com/PrefectHQ/prefect/pull/22882))
 - **[thingctx/thingctx](https://github.com/thingctx/thingctx)** — ✅ merged: pinned every third-party GitHub Action to a commit SHA across CI and release workflows ([#127](https://github.com/thingctx/thingctx/pull/127))
 - **[dbt-labs/dbt-core](https://github.com/dbt-labs/dbt-core)** — the workflow that publishes to GitHub, PyPI and Docker: dispatch inputs expanded unquoted into an `echo` and into a command substitution ([#15994](https://github.com/dbt-labs/dbt-core/pull/15994))
-- **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — release workflow: the version input reached a command substitution and a step carrying `GITHUB_TOKEN` ([#8375](https://github.com/sqlfluff/sqlfluff/pull/8375))
+- **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — ✅ merged: release workflow: the version input reached a command substitution and a step carrying `GITHUB_TOKEN` ([#8375](https://github.com/sqlfluff/sqlfluff/pull/8375))
 - **[sktime/pytorch-forecasting](https://github.com/sktime/pytorch-forecasting)** — PyPI release workflow: tag name expanded into the tag check that gates the build, plus a least-privilege `permissions:` block the file had never declared ([#2385](https://github.com/sktime/pytorch-forecasting/pull/2385))
 
 **Correctness, performance and dead code**
