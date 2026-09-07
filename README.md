@@ -24,10 +24,16 @@
 
 ---
 
-## 💼 Available for work
+## 💼 What I build
 
-Open to remote and contract work in DevSecOps, software supply-chain security,
-and AI-agent infrastructure. Based in Morocco, across EMEA and US-morning hours.
+Production web systems and business software: multi-tenant data models, authentication
+and role-based access, PostgreSQL, offline-capable frontends, and interfaces that work
+in both French and Arabic, right-to-left included rather than merely translated.
+Alongside that, systems work in Rust and release-pipeline security in other people's
+repositories.
+
+Based in Morocco, working across EMEA and US-morning hours. Open to product engineering,
+contract work and consulting.
 
 [wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
 · [LinkedIn](https://www.linkedin.com/in/wahib-el-khadiri-a54134283)
@@ -65,6 +71,7 @@ always in the one job holding the publishing credentials.
 
 | Project | Stack |
 |---|---|
+| **[MoroccoFlow](https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow)** — business management for Moroccan SMEs: CRM, quotes, invoices and expenses in dirhams, French and Arabic with real RTL, working offline. | <sub>Node · Fastify · PostgreSQL row-level security · Playwright/axe</sub><br>[![Quality](https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow/actions/workflows/ci.yml) |
 | **[AgentOS](https://github.com/WAHIB-EL-KHADIRI/AgentOS)** — runtime for AI agents: supervised lifecycle, gRPC bus, secrets vault, deterministic trace replay. | <sub>Rust · 10-crate workspace · MIT/Apache-2.0</sub><br>[![CI](https://github.com/WAHIB-EL-KHADIRI/AgentOS/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/AgentOS/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/WAHIB-EL-KHADIRI/AgentOS?include_prereleases&style=flat-square&label=release&color=CD7F32)](https://github.com/WAHIB-EL-KHADIRI/AgentOS/releases) |
 | **[AI Content OS](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory)** — 8 specialized agents, a visual workflow engine, and a router that picks the right model per task. | <sub>Python · FastAPI + React</sub><br>[![CI](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory/actions/workflows/ci.yml) |
 | **[TaskFlow Pro](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro)** — task management on a custom MVC; the domain layer stays free of framework and persistence concerns. | <sub>PHP 8.1 · PSR-12 · PHPStan 5</sub><br>[![CI](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro/actions/workflows/ci.yml/badge.svg)](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro/actions/workflows/ci.yml) |
