@@ -62,6 +62,30 @@ always in the one job holding the publishing credentials.
 - **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — ✅ merged: release workflow: the version input reached a command substitution and a step carrying `GITHUB_TOKEN` ([#8375](https://github.com/sqlfluff/sqlfluff/pull/8375))
 - **[sktime/pytorch-forecasting](https://github.com/sktime/pytorch-forecasting)** — PyPI release workflow: tag name expanded into the tag check that gates the build, plus a least-privilege `permissions:` block the file had never declared ([#2385](https://github.com/sktime/pytorch-forecasting/pull/2385))
 
+**Bugs found by tooling I wrote**
+
+A linter's core promise is that fixing valid input leaves valid input. Almost no
+project tests that across its whole corpus — fixtures are tested for *parsing*,
+and rules are tested for *their* fix, but not for the two composed. So I wrote a
+scanner that asserts it, and pointed it at a 9k-star SQL linter.
+
+- **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — `fix` silently
+  welding adjacent tokens together. `1 * - - 5` is rewritten as `1 * --5`, where
+  `--` starts a comment and the rest of the line stops executing. The scan found
+  it in three dialects: the same fusion in SQLite as `~ ~ ~` → `~~~`, and in
+  Oracle two *keywords* welded — `MULTISET EXCEPT` → `MULTISETEXCEPT` — by the
+  rule whose job is whitespace. Fix plus cross-dialect regression tests, each
+  validated to fail without the fix
+  ([#8415](https://github.com/sqlfluff/sqlfluff/pull/8415))
+- **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — `RF06` unquotes
+  both halves of a MySQL/MariaDB `'user'@'host'` account specification, which is
+  syntax rather than a quoted identifier. `CREATE USER`, `GRANT`, `DROP USER` and
+  `DEFINER =` all come back unparsable, on the default rule set
+  ([#8462](https://github.com/sqlfluff/sqlfluff/issues/8462))
+- **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — lint-result
+  caching for files that came back clean, so a pre-commit run stops re-parsing
+  files nothing touched ([#8418](https://github.com/sqlfluff/sqlfluff/pull/8418))
+
 **Correctness, performance and dead code**
 
 - **[sktime/sktime](https://github.com/sktime/sktime)** — ✅ merged: removed mutable default arguments (B006) from the ConvTimeNet backbones ([#10730](https://github.com/sktime/sktime/pull/10730))
