@@ -75,13 +75,17 @@ rather than the tool under test. **It found nothing.** Reporting that too, becau
 a method that only publishes its hits is a sales pitch.
 
 - **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — `fix` silently
-  welding adjacent tokens together. `1 * - - 5` is rewritten as `1 * --5`, where
-  `--` starts a comment and the rest of the line stops executing. The scan found
-  it in three dialects: the same fusion in SQLite as `~ ~ ~` → `~~~`, and in
-  Oracle two *keywords* welded — `MULTISET EXCEPT` → `MULTISETEXCEPT` — by the
-  rule whose job is whitespace. Fix plus cross-dialect regression tests, each
-  validated to fail without the fix
+  welds adjacent tokens together, so the file it writes lexes differently from
+  the one it read. Still reproducing on `main`: `8 | ~ ~ ~4` → `8 | ~~~4`, and in
+  Oracle two *keywords* — `MULTISET EXCEPT` → `MULTISETEXCEPT` — welded by
+  `LT02`, a rule whose only job is indentation. Upstream has since patched one
+  instance of this class in its own rule ([#8395]); the argument in my PR is that
+  guarding once, where fixes are applied, ends the class instead of meeting it
+  again in the next layout rule. Fix plus cross-dialect regression tests, each
+  validated to fail without it
   ([#8415](https://github.com/sqlfluff/sqlfluff/pull/8415))
+
+[#8395]: https://github.com/sqlfluff/sqlfluff/pull/8395
 - **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — `RF06` unquotes
   both halves of a MySQL/MariaDB `'user'@'host'` account specification, which is
   syntax rather than a quoted identifier. `CREATE USER`, `GRANT`, `DROP USER` and
