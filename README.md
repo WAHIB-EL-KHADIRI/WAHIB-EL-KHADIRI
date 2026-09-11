@@ -61,6 +61,11 @@ project tests that across its whole corpus — fixtures are tested for *parsing*
 and rules are tested for *their* fix, but not for the two composed. So I wrote a
 scanner that asserts it, and pointed it at a 9k-star SQL linter.
 
+I also pointed it at [ruff](https://github.com/astral-sh/ruff) — 1,607 fixtures,
+`--select ALL --fix --unsafe-fixes`, with CPython's own `ast.parse` as the judge
+rather than the tool under test. **It found nothing.** Reporting that too, because
+a method that only publishes its hits is a sales pitch.
+
 - **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — `fix` silently
   welding adjacent tokens together. `1 * - - 5` is rewritten as `1 * --5`, where
   `--` starts a comment and the rest of the line stops executing. The scan found
@@ -74,6 +79,13 @@ scanner that asserts it, and pointed it at a 9k-star SQL linter.
   syntax rather than a quoted identifier. `CREATE USER`, `GRANT`, `DROP USER` and
   `DEFINER =` all come back unparsable, on the default rule set
   ([#8462](https://github.com/sqlfluff/sqlfluff/issues/8462))
+- **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — the opposite
+  failure of the same rule: `RF06` replaces a procedure or function name with a
+  segment the grammar at that position cannot accept — `FunctionNameSegment` takes
+  `TypedParser("word")` or a quoted identifier, and the rule hands it a
+  `naked_identifier` — so the fix is silently dropped on 20 of the project's own
+  fixtures while the tool prints "please report this as a bug"
+  ([#8466](https://github.com/sqlfluff/sqlfluff/issues/8466))
 - **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — lint-result
   caching for files that came back clean, so a pre-commit run stops re-parsing
   files nothing touched ([#8418](https://github.com/sqlfluff/sqlfluff/pull/8418))
@@ -89,7 +101,7 @@ scanner that asserts it, and pointed it at a 9k-star SQL linter.
 - **[skodaconnect/myskoda](https://github.com/skodaconnect/myskoda)** — ✅ merged: added the missing `SoftwareStatus` enum members so updates in progress stop failing to parse ([#641](https://github.com/skodaconnect/myskoda/pull/641))
 - **[abduznik/instrumation](https://github.com/abduznik/instrumation)** — ✅ merged: the duplicate-address scanner no longer breaks on empty or `None` input ([#137](https://github.com/abduznik/instrumation/pull/137))
 - **[mldsveda/PyScrappy](https://github.com/mldsveda/PyScrappy)** — ✅ merged: aligned the GitHub scraper's default result count with the MCP tool ([#82](https://github.com/mldsveda/PyScrappy/pull/82))
-- **[every-app/open-seo](https://github.com/every-app/open-seo)** — agent-readiness audits: AI crawler directives, `llms.txt`, Markdown alternates ([#122](https://github.com/every-app/open-seo/pull/122))
+- **[every-app/open-seo](https://github.com/every-app/open-seo)** — a self-hosted container can silently serve a stale client build: the entrypoint fingerprints a hardcoded env list that has to mirror `vite.config.ts`'s `envPrefix`, and only a comment keeps them in sync ([#316](https://github.com/every-app/open-seo/issues/316))
 
 ## 🛠 My own projects
 
@@ -115,12 +127,12 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>235</b> commits · <b>129</b> pull requests · <b>15</b> issues ·
-  <b>7</b> stars across <b>4</b> projects · <b>3 days</b> streak
+  <b>237</b> commits · <b>129</b> pull requests · <b>18</b> issues ·
+  <b>8</b> stars across <b>4</b> projects · <b>5 days</b> streak
 </p>
 
 <p align="center">
-  <sub>Public contributions, counted 2026-09-10 by
+  <sub>Public contributions, counted 2026-09-11 by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a>
   · joined GitHub this year · contributor to 26 repos I don't own</sub>
 </p>
