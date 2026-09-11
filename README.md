@@ -56,6 +56,14 @@ always in the one job holding the publishing credentials.
 
 **Bugs found by tooling I wrote**
 
+The tool is [`autofix-safety`](https://github.com/WAHIB-EL-KHADIRI/autofix-safety) —
+two adapters, one invariant, and a README written so the numbers can be checked
+rather than believed: tool version, corpus commit, command, environment, result,
+limitations. It also records the run that found **nothing** (ruff, 1,607 of its
+own fixtures and 1,805 CPython stdlib files, clean), and the finding that stopped
+reproducing once upstream fixed it.
+
+
 A linter's core promise is that fixing valid input leaves valid input. Almost no
 project tests that across its whole corpus — fixtures are tested for *parsing*,
 and rules are tested for *their* fix, but not for the two composed. So I wrote a
@@ -131,8 +139,8 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>238</b> commits · <b>130</b> pull requests · <b>18</b> issues ·
-  <b>8</b> stars across <b>4</b> projects · <b>5 days</b> streak
+  <b>243</b> commits · <b>133</b> pull requests · <b>18</b> issues ·
+  <b>8</b> stars across <b>5</b> projects · <b>5 days</b> streak
 </p>
 
 <p align="center">
