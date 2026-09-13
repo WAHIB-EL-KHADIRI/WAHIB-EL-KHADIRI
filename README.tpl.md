@@ -99,13 +99,6 @@ a method that only publishes its hits is a sales pitch.
   syntax rather than a quoted identifier. `CREATE USER`, `GRANT`, `DROP USER` and
   `DEFINER =` all come back unparsable, on the default rule set
   ([#8462](https://github.com/sqlfluff/sqlfluff/issues/8462))
-- **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — the opposite
-  failure of the same rule: `RF06` replaces a procedure or function name with a
-  segment the grammar at that position cannot accept — `FunctionNameSegment` takes
-  `TypedParser("word")` or a quoted identifier, and the rule hands it a
-  `naked_identifier` — so the fix is silently dropped on 20 of the project's own
-  fixtures while the tool prints "please report this as a bug"
-  ([#8466](https://github.com/sqlfluff/sqlfluff/issues/8466))
 - **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — lint-result
   caching for files that came back clean, so a pre-commit run stops re-parsing
   files nothing touched ([#8418](https://github.com/sqlfluff/sqlfluff/pull/8418))
