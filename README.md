@@ -145,7 +145,7 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>248</b> commits · <b>136</b> pull requests · <b>18</b> issues ·
+  <b>249</b> commits · <b>138</b> pull requests · <b>18</b> issues ·
   <b>9</b> stars across <b>5</b> projects · <b>2 days</b> streak
 </p>
 
