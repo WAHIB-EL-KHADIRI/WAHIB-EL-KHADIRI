@@ -12,6 +12,11 @@
   <br>
   <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel">
   <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+  <br>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL">
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
@@ -52,9 +57,11 @@ hand-written MVC over MySQL — auth, CSRF on every state-changing route, PHPSta
 level 2 — and [ai_content_factory](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory)
 is a FastAPI and React multi-agent platform.
 
-The rest — Laravel, MongoDB, multi-tenant Postgres, RBAC, offline-first
-frontends, bilingual FR/AR interfaces with real RTL — is in private
-repositories, so treat that half as context rather than as evidence.
+Two more are private, so treat this as context rather than evidence: a bilingual
+FR/AR school platform on **Laravel 12** with Sanctum behind a **Next.js 16 /
+React 19** front end, and a Moroccan SME system on **Fastify and PostgreSQL** —
+quotes, invoices, stock and CRM in dirhams, with real RTL rather than a mirrored
+stylesheet.
 
 Based in Morocco, working across EMEA and US-morning hours. Open to product
 engineering, contract work and consulting.
