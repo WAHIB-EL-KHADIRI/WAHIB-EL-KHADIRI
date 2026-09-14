@@ -34,14 +34,27 @@
 
 ## 💼 What I build
 
-Production web systems and business software: multi-tenant data models, authentication
-and role-based access, PostgreSQL, offline-capable frontends, and interfaces that work
-in both French and Arabic, right-to-left included rather than merely translated.
-Alongside that, systems work in Rust and release-pipeline security in other people's
-repositories.
+**Correctness in developer tooling**, mostly in other people's repositories. Two
+strands, and the evidence for both is below rather than asserted here:
 
-Based in Morocco, working across EMEA and US-morning hours. Open to product engineering,
-contract work and consulting.
+- **Auto-fixers that corrupt the code they fix.** Linters are trusted to rewrite
+  whole repositories unattended. I round-trip a project's own test corpus
+  through its `--fix` and check the output still parses — which found data-loss
+  bugs in a 9.8k-star SQL linter, and found nothing at all in ruff, which is
+  reported just as plainly.
+- **Release pipelines that execute their own inputs.** `${{ ... }}` is
+  substituted as text before the shell parses the line, so a tag name stops
+  being data — usually in the one job holding the publishing credentials.
+
+Also Rust systems work: [AgentOS](https://github.com/WAHIB-EL-KHADIRI/AgentOS),
+a runtime for supervising long-lived agents and replaying their runs offline.
+
+Web and business systems too — multi-tenant Postgres, RBAC, offline-first
+frontends, bilingual FR/AR interfaces with real RTL — but those repositories are
+private, so treat this paragraph as context rather than as evidence.
+
+Based in Morocco, working across EMEA and US-morning hours. Open to product
+engineering, contract work and consulting.
 
 [wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
 · [LinkedIn](https://www.linkedin.com/in/wahib-el-khadiri-a54134283)
