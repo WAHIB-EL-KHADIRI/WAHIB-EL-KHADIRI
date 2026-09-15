@@ -9,11 +9,6 @@
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP">
-  <br>
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" alt="Laravel">
-  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL">
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
   &nbsp;·&nbsp;
   <a href="https://wahib-portfolio.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-2E7D32?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
@@ -46,15 +41,9 @@ strands, and the evidence for both is below rather than asserted here:
 Also Rust systems work: [AgentOS](https://github.com/WAHIB-EL-KHADIRI/AgentOS),
 a runtime for supervising long-lived agents and replaying their runs offline.
 
-Web and business systems too. Two of those are public and can be read:
-[taskflow-pro](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro) is PHP 8.1 on a
-hand-written MVC over MySQL — auth, CSRF on every state-changing route, PHPStan
-level 2 — and [ai_content_factory](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory)
-is a FastAPI and React multi-agent platform.
-
-The rest — Laravel, MongoDB, multi-tenant Postgres, RBAC, offline-first
-frontends, bilingual FR/AR interfaces with real RTL — is in private
-repositories, so treat that half as context rather than as evidence.
+Web and business systems too — multi-tenant Postgres, RBAC, offline-first
+frontends, bilingual FR/AR interfaces with real RTL — but those repositories are
+private, so treat this paragraph as context rather than as evidence.
 
 Based in Morocco, working across EMEA and US-morning hours. Open to product
 engineering, contract work and consulting.
@@ -156,12 +145,12 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>249</b> commits · <b>138</b> pull requests · <b>18</b> issues ·
-  <b>9</b> stars across <b>5</b> projects · <b>2 days</b> streak
+  <b>247</b> commits · <b>136</b> pull requests · <b>18</b> issues ·
+  <b>10</b> stars across <b>4</b> projects · <b>2 days</b> streak
 </p>
 
 <p align="center">
-  <sub>Public contributions, counted 2026-09-14 by
+  <sub>Public contributions, counted 2026-09-15 by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a>
   · joined GitHub this year · contributor to 26 repos I don't own</sub>
 </p>
