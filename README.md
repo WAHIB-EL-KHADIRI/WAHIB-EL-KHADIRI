@@ -69,12 +69,13 @@ always in the one job holding the publishing credentials.
 
 **Bugs found by tooling I wrote**
 
-The tool is [`autofix-safety`](https://github.com/WAHIB-EL-KHADIRI/autofix-safety) —
-two adapters, one invariant, and a README written so the numbers can be checked
-rather than believed: tool version, corpus commit, command, environment, result,
-limitations. It also records the run that found **nothing** (ruff, 1,607 of its
-own fixtures and 1,805 CPython stdlib files, clean), and the finding that stopped
-reproducing once upstream fixed it.
+Found with a scanner I wrote: two adapters, one invariant, and results recorded
+so they can be checked rather than believed — tool version, corpus commit,
+command, environment, limitations. The runs that found **nothing** are recorded
+the same way (ruff, across 1,607 of its own fixtures and 1,805 CPython stdlib
+files, clean), and so is the finding that stopped reproducing once upstream
+fixed it. The issues below are the part you can verify without taking my word
+for any of it.
 
 
 A linter's core promise is that fixing valid input leaves valid input. Almost no
@@ -131,8 +132,11 @@ a method that only publishes its hits is a sales pitch.
 
 ## ✍️ Writing
 
-- [I Shipped My First Rust Release, and CI Turned Red Twice in 20 Minutes](https://dev.to/wahib_el_khadiri_0/i-shipped-my-first-rust-release-and-ci-turned-red-twice-in-20-minutes-31hp)
-- [I Taught an Open-Source SEO Tool to Check Whether Your Site Is Readable by AI Agents](https://dev.to/wahib_el_khadiri_0/i-taught-an-open-source-seo-tool-to-check-whether-your-site-is-readable-by-ai-agents-15i3)
+- [I Round-Tripped 2,249 Test Fixtures Through sqlfluff's Auto-Fixer. Eight Came Back Unparsable.](https://dev.to/wahib_el_khadiri_0/i-round-tripped-2249-test-fixtures-through-sqlfluffs-auto-fixer-eight-came-back-unparsable-45le)
+  — the method, including the check that found nothing and the finding that stopped reproducing once upstream fixed it.
+- [A GitHub Actions tag is a promise, not a fact: pinning by SHA the right way](https://dev.to/wahib_el_khadiri_0/a-github-actions-tag-is-a-promise-not-a-fact-pinning-by-sha-the-right-way-3np)
+- [I Read 25 Release Pipelines Looking for One Bug. Four Had It.](https://dev.to/wahib_el_khadiri_0/i-read-25-release-pipelines-looking-for-one-bug-four-had-it-3n9e)
+  — the twenty-one that were clean are the point.
 
 ## 🧩 Contribute
 
@@ -145,8 +149,8 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>247</b> commits · <b>136</b> pull requests · <b>18</b> issues ·
-  <b>10</b> stars across <b>4</b> projects · <b>2 days</b> streak
+  <b>248</b> commits · <b>136</b> pull requests · <b>18</b> issues ·
+  <b>10</b> stars across <b>4</b> projects · <b>3 days</b> streak
 </p>
 
 <p align="center">
