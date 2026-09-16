@@ -162,8 +162,8 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>278</b> commits · <b>165</b> pull requests · <b>21</b> issues ·
-  <b>10</b> stars across <b>5</b> projects · <b>4 days</b> streak
+  <b>285</b> commits · <b>172</b> pull requests · <b>23</b> issues ·
+  <b>11</b> stars across <b>5</b> projects · <b>4 days</b> streak
 </p>
 
 <p align="center">
