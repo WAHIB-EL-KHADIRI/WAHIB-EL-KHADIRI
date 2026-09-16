@@ -46,6 +46,17 @@ strands, and the evidence for both is below rather than asserted here:
   substituted as text before the shell parses the line, so a tag name stops
   being data — usually in the one job holding the publishing credentials.
 
+You can run the first one against your own repository right now. No install,
+about a minute, nothing left behind:
+
+```bash
+uvx --from "autofix-safety[ruff] @ git+https://github.com/WAHIB-EL-KHADIRI/autofix-safety" autofix-safety-ruff . findings.json
+```
+
+It will almost certainly come back clean — that is the common result, and
+`findings.json` records the tool version, corpus and flags so a clean run is
+checkable rather than just reassuring.
+
 Also Rust systems work: [AgentOS](https://github.com/WAHIB-EL-KHADIRI/AgentOS),
 a runtime for supervising long-lived agents and replaying their runs offline.
 
