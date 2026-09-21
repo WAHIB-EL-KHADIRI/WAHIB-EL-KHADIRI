@@ -100,15 +100,13 @@ I also pointed it at [ruff](https://github.com/astral-sh/ruff) — 1,607 fixture
 rather than the tool under test. **It found nothing.** Reporting that too, because
 a method that only publishes its hits is a sales pitch.
 
-- **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — `fix` silently
-  welds adjacent tokens together, so the file it writes lexes differently from
-  the one it read. Still reproducing on `main`: `8 | ~ ~ ~4` → `8 | ~~~4`, and in
-  Oracle two *keywords* — `MULTISET EXCEPT` → `MULTISETEXCEPT` — welded by
-  `LT02`, a rule whose only job is indentation. Upstream has since patched one
-  instance of this class in its own rule ([#8395]); the argument in my PR is that
-  guarding once, where fixes are applied, ends the class instead of meeting it
-  again in the next layout rule. Fix plus cross-dialect regression tests, each
-  validated to fail without it
+- **[sqlfluff/sqlfluff](https://github.com/sqlfluff/sqlfluff)** — `fix` could weld
+  adjacent tokens together, so the file it writes lexes differently from the one
+  it read: in Oracle, two *keywords* — `MULTISET EXCEPT` → `MULTISETEXCEPT` —
+  fused by `LT01`. Upstream fixed the arithmetic case I led with ([#8395]), which
+  made my opening example stale. **Closed unmerged**, and the reason was
+  reviewability rather than correctness — too verbose, and missing a real-world
+  query as the motivating test. Worth recording as written
   ([#8415](https://github.com/sqlfluff/sqlfluff/pull/8415))
 
 [#8395]: https://github.com/sqlfluff/sqlfluff/pull/8395
@@ -162,12 +160,12 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>288</b> commits · <b>179</b> pull requests · <b>24</b> issues ·
-  <b>11</b> stars across <b>5</b> projects · <b>0 days</b> streak
+  <b>294</b> commits · <b>184</b> pull requests · <b>25</b> issues ·
+  <b>11</b> stars across <b>5</b> projects · <b>1 day</b> streak
 </p>
 
 <p align="center">
-  <sub>Public contributions, counted 2026-09-20 by
+  <sub>Public contributions, counted 2026-09-21 by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a>
   · joined GitHub this year · contributor to 27 repos I don't own</sub>
 </p>
