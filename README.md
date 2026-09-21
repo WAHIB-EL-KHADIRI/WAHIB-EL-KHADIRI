@@ -19,7 +19,6 @@
 
 <p align="center">
   <a href="https://github.com/WAHIB-EL-KHADIRI/AgentOS"><img src="https://img.shields.io/github/stars/WAHIB-EL-KHADIRI/AgentOS?style=for-the-badge&logo=github&label=Star%20AgentOS&color=CD7F32&labelColor=0D1117" alt="Star AgentOS on GitHub"></a>
-  <a href="https://github.com/WAHIB-EL-KHADIRI?tab=followers"><img src="https://img.shields.io/github/followers/WAHIB-EL-KHADIRI?style=for-the-badge&logo=github&label=Follow&color=2E7D32&labelColor=0D1117" alt="Follow WAHIB-EL-KHADIRI on GitHub"></a>
 </p>
 
 ---
@@ -160,12 +159,16 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>294</b> commits · <b>184</b> pull requests · <b>25</b> issues ·
-  <b>11</b> stars across <b>5</b> projects · <b>1 day</b> streak
+  <b>39</b> pull requests into repositories I don't own —
+  <b>15</b> merged · <b>13</b> open · <b>11</b> closed
+</p>
+
+<p align="center">
+  <b>393</b> commits · <b>26</b> issues · <b>11</b> stars across <b>5</b> projects
 </p>
 
 <p align="center">
   <sub>Public contributions, counted 2026-09-21 by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a>
-  · joined GitHub this year · contributor to 27 repos I don't own</sub>
+  · contributor to 27 repos I don't own</sub>
 </p>
