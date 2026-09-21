@@ -124,6 +124,39 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 """
 
 
+UPSTREAM_PR_QUERY = """
+query($q: String!) {
+  search(query: $q, type: ISSUE) {
+    issueCount
+  }
+}
+"""
+
+
+def fetch_upstream_prs(token: str, login: str) -> dict:
+    """Count pull requests into repositories the user does not own, by state.
+
+    `totalPullRequestContributions` counts every pull request, including those
+    opened against one's own repositories, which on this account is most of
+    them. Printing that number next to a merge count invites the reader to
+    divide one by the other and conclude the merge rate is a fifth of what it
+    is. Only the upstream ledger says anything about whether other maintainers
+    accept the work.
+    """
+    states = {
+        "merged": "is:merged",
+        "open": "is:open",
+        "closed": "is:closed is:unmerged",
+    }
+    counts = {}
+    for name, state_filter in states.items():
+        query = f"type:pr author:{login} -user:{login} {state_filter}"
+        result = graphql(token, UPSTREAM_PR_QUERY, {"q": query})
+        counts[name] = result["search"]["issueCount"]
+    counts["total"] = sum(counts.values())
+    return counts
+
+
 def fetch_stars(token: str, login: str) -> int:
     """Sum stargazers across every non-fork public repo the user owns."""
     total = 0
@@ -228,6 +261,7 @@ def main() -> int:
 
         totals, calendar = fetch_contributions(token, login, joined)
         stars = fetch_stars(token, login)
+        upstream = fetch_upstream_prs(token, login)
     except GitHubError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
@@ -237,6 +271,10 @@ def main() -> int:
         "COMMITS": f"{totals['commits']:,}",
         "ISSUES": f"{totals['issues']:,}",
         "PRS": f"{totals['prs']:,}",
+        "UPSTREAM_PRS": f"{upstream['total']:,}",
+        "UPSTREAM_MERGED": f"{upstream['merged']:,}",
+        "UPSTREAM_OPEN": f"{upstream['open']:,}",
+        "UPSTREAM_CLOSED": f"{upstream['closed']:,}",
         "STARS": f"{stars:,}",
         "REPOS": f"{profile['repositories']['totalCount']:,}",
         "CONTRIBUTED": f"{profile['repositoriesContributedTo']['totalCount']:,}",

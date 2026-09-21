@@ -27,7 +27,6 @@
 
 <p align="center">
   <a href="https://github.com/WAHIB-EL-KHADIRI/AgentOS"><img src="https://img.shields.io/github/stars/WAHIB-EL-KHADIRI/AgentOS?style=for-the-badge&logo=github&label=Star%20AgentOS&color=CD7F32&labelColor=0D1117" alt="Star AgentOS on GitHub"></a>
-  <a href="https://github.com/WAHIB-EL-KHADIRI?tab=followers"><img src="https://img.shields.io/github/followers/WAHIB-EL-KHADIRI?style=for-the-badge&logo=github&label=Follow&color=2E7D32&labelColor=0D1117" alt="Follow WAHIB-EL-KHADIRI on GitHub"></a>
 </p>
 
 ---
@@ -168,12 +167,16 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 ---
 
 <p align="center">
-  <b>{{COMMITS}}</b> commits · <b>{{PRS}}</b> pull requests · <b>{{ISSUES}}</b> issues ·
-  <b>{{STARS}}</b> stars across <b>{{REPOS}}</b> projects · <b>{{STREAK}}</b> streak
+  <b>{{UPSTREAM_PRS}}</b> pull requests into repositories I don't own —
+  <b>{{UPSTREAM_MERGED}}</b> merged · <b>{{UPSTREAM_OPEN}}</b> open · <b>{{UPSTREAM_CLOSED}}</b> closed
+</p>
+
+<p align="center">
+  <b>{{COMMITS}}</b> commits · <b>{{ISSUES}}</b> issues · <b>{{STARS}}</b> stars across <b>{{REPOS}}</b> projects
 </p>
 
 <p align="center">
   <sub>Public contributions, counted {{UPDATED}} by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a>
-  · joined GitHub {{YEARS}} · contributor to {{CONTRIBUTED}} repos I don't own</sub>
+  · contributor to {{CONTRIBUTED}} repos I don't own</sub>
 </p>
