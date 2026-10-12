@@ -268,6 +268,10 @@ a method that only publishes its hits is a sales pitch.
 - [I Read 25 Release Pipelines Looking for One Bug. Four Had It.](https://dev.to/wahib_el_khadiri_0/i-read-25-release-pipelines-looking-for-one-bug-four-had-it-3n9e)
   — the twenty-one that were clean are the point.
 
+## 📺 قناتي على YouTube
+
+[WAHIB_DEVELOPPEUR_MAROC](https://youtube.com/@DEVELOPPEUR_MAROC) — دروس برمجة بالدارجة: JavaScript، نصائح عملية، والأخطاء الشائعة.
+
 ## 🧩 Contribute
 
 AgentOS is open to contributors: issues labelled
