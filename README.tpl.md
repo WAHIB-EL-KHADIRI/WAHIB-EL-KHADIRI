@@ -14,27 +14,12 @@
 </p>
 
 <div align="center">
-<h3>Languages & Core Technologies</h3>
+<h3>Languages</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript">
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP">
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
-  <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white" alt="C">
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
-  <img src="https://img.shields.io/badge/CSharp-239120?style=flat-square&logo=csharp&logoColor=white" alt="CSharp">
-  <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin">
-  <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift">
-  <img src="https://img.shields.io/badge/Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white" alt="Ruby">
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart">
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL">
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Bash">
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell">
-  <img src="https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white" alt="Lua">
-  <img src="https://img.shields.io/badge/Elixir-4B275F?style=flat-square&logo=elixir&logoColor=white" alt="Elixir">
 </p>
 <h3>Frontend Engineering</h3>
 <p align="center">
@@ -181,6 +166,13 @@ engineering, contract work and consulting.
 
 [wahibelkhadiri06@gmail.com](mailto:wahibelkhadiri06@gmail.com)
 · [LinkedIn](https://www.linkedin.com/in/wahib-el-khadiri-a54134283)
+
+## ⭐ Featured projects
+
+- **[AgentOS](https://github.com/WAHIB-EL-KHADIRI/AgentOS)** — Rust runtime for AI agents that journals every LLM exchange and tool result so a run can be replayed offline; currently published as alpha releases.
+- **[autofix-safety](https://github.com/WAHIB-EL-KHADIRI/autofix-safety)** — Python scanner that round-trips a linter's own test corpus through `--fix`; found data-loss bugs in sqlfluff, nothing in ruff.
+- **[ai_content_factory](https://github.com/WAHIB-EL-KHADIRI/ai_content_factory)** — FastAPI + React platform that orchestrates eight specialised content agents through configurable workflows.
+- **[movieverse](https://github.com/WAHIB-EL-KHADIRI/movieverse)** — frontend-only React 19 + TypeScript movie browser on the TMDB API; its tests run against a mocked API.
 
 ## 🔒 Work in other people's repositories
 
