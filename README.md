@@ -229,7 +229,7 @@ cover Rust internals, CLI ergonomics and docs. Design questions live in
 </p>
 
 <p align="center">
-  <b>332</b> commits · <b>25</b> issues · <b>13</b> stars across <b>6</b> projects
+  <b>333</b> commits · <b>25</b> issues · <b>13</b> stars across <b>6</b> projects
 </p>
 
 <p align="center">
