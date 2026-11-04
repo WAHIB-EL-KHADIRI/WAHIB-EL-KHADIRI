@@ -25,10 +25,10 @@
 <div align="center">
 <table>
   <tr>
-    <td align="center" width="170"><h2>{{UPSTREAM_MERGED}}</h2><sub>pull requests merged<br>by other maintainers</sub></td>
-    <td align="center" width="170"><h2>{{CONTRIBUTED}}</h2><sub>repositories contributed to<br>that I don't own</sub></td>
-    <td align="center" width="170"><h2>{{COMMITS}}</h2><sub>public commits</sub></td>
-    <td align="center" width="170"><h2>{{REPOS}}</h2><sub>public projects</sub></td>
+    <td align="center" valign="top" width="170"><h3>{{UPSTREAM_MERGED}}</h3><sub>pull requests merged<br>by other maintainers</sub></td>
+    <td align="center" valign="top" width="170"><h3>{{CONTRIBUTED}}</h3><sub>repositories contributed to<br>that I don't own</sub></td>
+    <td align="center" valign="top" width="170"><h3>{{COMMITS}}</h3><sub>public commits</sub></td>
+    <td align="center" valign="top" width="170"><h3>{{REPOS}}</h3><sub>public projects</sub></td>
   </tr>
 </table>
 </div>
@@ -38,7 +38,7 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://film2027.netlify.app"><img src="https://raw.githubusercontent.com/WAHIB-EL-KHADIRI/movieverse/main/docs/screenshots/home.png" alt="MovieVerse home page with the trending hero"></a>
+      <a href="https://film2027.netlify.app"><img src="assets/movieverse.jpg" alt="MovieVerse home page with the trending hero"></a>
       <h3><a href="https://github.com/WAHIB-EL-KHADIRI/movieverse">MovieVerse</a></h3>
       Movie discovery app on the TMDB API: trending, search, filters, detail pages, favorites, dark mode and skeleton loaders.
       <br><br>
@@ -47,13 +47,13 @@
       🎬 <a href="https://film2027.netlify.app"><b>Try the live demo</b></a>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow"><img src="https://raw.githubusercontent.com/WAHIB-EL-KHADIRI/MoroccoFlow/main/docs/screenshots/dashboard-light.png" alt="MoroccoFlow dashboard"></a>
+      <a href="https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow"><img src="assets/moroccoflow.jpg" alt="MoroccoFlow dashboard"></a>
       <h3><a href="https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow">MoroccoFlow</a></h3>
       Bilingual FR/AR business platform for Moroccan SMEs: CRM, quotes, invoices and expenses in MAD, with real RTL support.
       <br><br>
       <sub>Fastify · PostgreSQL row-level security · offline-first PWA</sub>
       <br><br>
-      🇲🇦 <a href="https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow"><b>Read the code</b></a>
+      🧾 <a href="https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow"><b>Read the code</b></a>
     </td>
   </tr>
 </table>
