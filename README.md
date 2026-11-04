@@ -15,6 +15,7 @@ React · JavaScript/TypeScript · Node.js · Laravel (PHP) · Python/FastAPI · 
 🎬 **Live demo:** https://film2027.netlify.app
 
 **[TaskFlow Pro](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro)** — Task & project management system, PHP 8.1 custom MVC.
+**[MoroccoFlow](https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow)** — Bilingual FR/AR business management platform for Moroccan SMEs — CRM, quotes, invoices and expenses in MAD. Fastify, PostgreSQL row-level security, offline-first PWA.
 
 ## 📺 YouTube
 
@@ -30,7 +31,7 @@ React · JavaScript/TypeScript · Node.js · Laravel (PHP) · Python/FastAPI · 
 </p>
 
 <p align="center">
-  <b>377</b> commits · <b>25</b> issues · <b>14</b> stars across <b>7</b> projects
+  <b>379</b> commits · <b>25</b> issues · <b>14</b> stars across <b>7</b> projects
 </p>
 
 <p align="center">
