@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://wahib-portfolio.netlify.app"><img src="https://img.shields.io/badge/Portfolio-2EA66F?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/wahib-el-khadiri-a54134283"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/wahib-el-khadiri"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://youtube.com/@DEVELOPPEUR_MAROC"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
   <a href="https://dev.to/wahib_el_khadiri_0"><img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" alt="dev.to"></a>
 </p>
@@ -18,7 +18,7 @@
   <tr>
     <td align="center" valign="top" width="170"><h3>17</h3><sub>pull requests merged<br>by other maintainers</sub></td>
     <td align="center" valign="top" width="170"><h3>28</h3><sub>repositories contributed to<br>that I don't own</sub></td>
-    <td align="center" valign="top" width="170"><h3>400</h3><sub>public commits</sub></td>
+    <td align="center" valign="top" width="170"><h3>402</h3><sub>public commits</sub></td>
     <td align="center" valign="top" width="170"><h3>7</h3><sub>public projects</sub></td>
   </tr>
 </table>
@@ -115,13 +115,13 @@
 
 <p align="center">
   <a href="https://wahib-portfolio.netlify.app"><b>Portfolio</b></a> ·
-  <a href="https://www.linkedin.com/in/wahib-el-khadiri-a54134283"><b>LinkedIn</b></a>
+  <a href="https://www.linkedin.com/in/wahib-el-khadiri"><b>LinkedIn</b></a>
 </p>
 
 <p align="center">
   <sub><b>41</b> pull requests into repositories I don't own:
   <b>17</b> merged · <b>10</b> open · <b>14</b> closed<br>
-  <b>400</b> commits · <b>25</b> issues · <b>14</b> stars across <b>7</b> projects<br>
+  <b>402</b> commits · <b>25</b> issues · <b>14</b> stars across <b>7</b> projects<br>
   Public contributions, counted 2026-11-05 by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a></sub>
 </p>
