@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://wahib-portfolio.netlify.app"><img src="https://img.shields.io/badge/Portfolio-2EA66F?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/wahib-el-khadiri-a54134283"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/wahib-el-khadiri"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://youtube.com/@DEVELOPPEUR_MAROC"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"></a>
   <a href="https://dev.to/wahib_el_khadiri_0"><img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" alt="dev.to"></a>
 </p>
@@ -124,7 +124,7 @@
 
 <p align="center">
   <a href="https://wahib-portfolio.netlify.app"><b>Portfolio</b></a> ·
-  <a href="https://www.linkedin.com/in/wahib-el-khadiri-a54134283"><b>LinkedIn</b></a>
+  <a href="https://www.linkedin.com/in/wahib-el-khadiri"><b>LinkedIn</b></a>
 </p>
 
 <p align="center">
