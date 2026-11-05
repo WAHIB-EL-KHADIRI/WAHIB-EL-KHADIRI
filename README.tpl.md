@@ -47,13 +47,13 @@
       🎬 <a href="https://film2027.netlify.app"><b>Try the live demo</b></a>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow"><img src="assets/moroccoflow.jpg" alt="MoroccoFlow dashboard"></a>
+      <a href="https://wahib-el-khadiri.github.io/MoroccoFlow/"><img src="assets/moroccoflow.jpg" alt="MoroccoFlow dashboard"></a>
       <h3><a href="https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow">MoroccoFlow</a></h3>
       Bilingual FR/AR business platform for Moroccan SMEs: CRM, quotes, invoices and expenses in MAD, with real RTL support.
       <br><br>
       <sub>Fastify · PostgreSQL row-level security · offline-first PWA</sub>
       <br><br>
-      🧾 <a href="https://github.com/WAHIB-EL-KHADIRI/MoroccoFlow"><b>Read the code</b></a>
+      🧾 <a href="https://wahib-el-khadiri.github.io/MoroccoFlow/"><b>Try the live demo</b></a>
     </td>
   </tr>
 </table>
