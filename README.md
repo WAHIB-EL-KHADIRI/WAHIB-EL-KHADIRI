@@ -16,7 +16,7 @@
 <div align="center">
 <table>
   <tr>
-    <td align="center" valign="top" width="170"><h3>17</h3><sub>pull requests merged<br>by other maintainers</sub></td>
+    <td align="center" valign="top" width="170"><h3>16</h3><sub>pull requests merged<br>by other maintainers</sub></td>
     <td align="center" valign="top" width="170"><h3>27</h3><sub>repositories contributed to<br>that I don't own</sub></td>
     <td align="center" valign="top" width="170"><h3>422</h3><sub>public commits</sub></td>
     <td align="center" valign="top" width="170"><h3>7</h3><sub>public projects</sub></td>
@@ -119,9 +119,9 @@
 </p>
 
 <p align="center">
-  <sub><b>41</b> pull requests into repositories I don't own:
-  <b>17</b> merged · <b>10</b> open · <b>14</b> closed<br>
+  <sub><b>40</b> pull requests into repositories I don't own:
+  <b>16</b> merged · <b>10</b> open · <b>14</b> closed<br>
   <b>422</b> commits · <b>25</b> issues · <b>13</b> stars across <b>7</b> projects<br>
-  Public contributions, counted 2026-11-18 by
+  Public contributions, counted 2026-11-19 by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a></sub>
 </p>
