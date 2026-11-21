@@ -119,9 +119,9 @@
 </p>
 
 <p align="center">
-  <sub><b>40</b> pull requests into repositories I don't own:
-  <b>16</b> merged · <b>10</b> open · <b>14</b> closed<br>
+  <sub><b>39</b> pull requests into repositories I don't own:
+  <b>16</b> merged · <b>10</b> open · <b>13</b> closed<br>
   <b>422</b> commits · <b>25</b> issues · <b>13</b> stars across <b>7</b> projects<br>
-  Public contributions, counted 2026-11-20 by
+  Public contributions, counted 2026-11-21 by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a></sub>
 </p>
