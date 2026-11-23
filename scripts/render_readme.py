@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Render README.md from README.tpl.md, filling in live GitHub stats.
+"""Refresh the live GitHub stats inside README.md, in place.
 
-Reads the template, queries the GitHub GraphQL API for lifetime contribution
-counts and the contribution calendar, and writes the result to README.md.
+README.md is the only source file and is edited by hand. Each live number
+sits between a pair of HTML comments, e.g. <!--COMMITS-->422<!--/COMMITS-->.
+This script queries the GitHub GraphQL API and rewrites only the text between
+those markers; everything else in the file is left byte-for-byte untouched.
 
 Standard library only, so the workflow needs no dependency install step.
 
@@ -11,8 +13,8 @@ Environment:
                    PAT with read:user also counts private contributions.
     GITHUB_LOGIN   optional; defaults to WAHIB-EL-KHADIRI.
 
-Exits non-zero on any API failure so a broken run fails the workflow loudly
-instead of committing a README full of placeholders.
+Exits non-zero on any API failure, or when README.md has no markers at all,
+so a broken run fails the workflow loudly instead of committing bad numbers.
 """
 
 from __future__ import annotations
@@ -29,8 +31,7 @@ import urllib.request
 
 API = "https://api.github.com/graphql"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-TEMPLATE = ROOT / "README.tpl.md"
-OUTPUT = ROOT / "README.md"
+README = ROOT / "README.md"
 
 DEFAULT_LOGIN = "WAHIB-EL-KHADIRI"
 
@@ -241,6 +242,21 @@ def joined_phrase(joined: dt.datetime) -> str:
     return f"{years} years ago"
 
 
+def fill_markers(text: str, values: dict[str, str]) -> tuple[str, int]:
+    """Replace the content of every <!--KEY-->...<!--/KEY--> pair.
+
+    Returns the new text and how many markers were rewritten. A key with no
+    marker in the file is simply not shown; that is a layout choice, not an
+    error.
+    """
+    total = 0
+    for key, value in values.items():
+        pattern = re.compile(rf"(<!--{key}-->).*?(<!--/{key}-->)", re.DOTALL)
+        text, count = pattern.subn(lambda m: m.group(1) + value + m.group(2), text)
+        total += count
+    return text, total
+
+
 def main() -> int:
     token = os.environ.get("GITHUB_TOKEN", "").strip()
     if not token:
@@ -249,10 +265,10 @@ def main() -> int:
 
     login = os.environ.get("GITHUB_LOGIN", "").strip() or DEFAULT_LOGIN
 
-    if not TEMPLATE.is_file():
-        print(f"error: template not found: {TEMPLATE}", file=sys.stderr)
+    if not README.is_file():
+        print(f"error: README not found: {README}", file=sys.stderr)
         return 1
-    template = TEMPLATE.read_text(encoding="utf-8")
+    original = README.read_text(encoding="utf-8")
 
     try:
         profile = graphql(token, PROFILE_QUERY, {"login": login})["user"]
@@ -282,25 +298,13 @@ def main() -> int:
         "UPDATED": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d"),
     }
 
-    # The template opens with a note aimed at whoever edits it. That note is
-    # wrong once copied into the output, so swap it for one aimed at readers.
-    template = re.sub(r"\A<!--.*?-->\n", "", template, count=1, flags=re.DOTALL)
-    banner = (
-        "<!-- Generated from README.tpl.md by scripts/render_readme.py.\n"
-        "     Edits here are overwritten on the next scheduled run. -->\n"
-    )
-
-    rendered = banner + template
-    for key, value in values.items():
-        rendered = rendered.replace("{{" + key + "}}", value)
-
-    leftover = [key for key in values if "{{" + key + "}}" in rendered]
-    if leftover:  # a placeholder the replace loop somehow missed
-        print(f"error: unfilled placeholders: {leftover}", file=sys.stderr)
+    rendered, filled = fill_markers(original, values)
+    if filled == 0:
+        print("error: no <!--KEY--> markers found in README.md", file=sys.stderr)
         return 1
 
-    OUTPUT.write_text(rendered, encoding="utf-8", newline="\n")
-    print(f"wrote {OUTPUT.name} for {login}")
+    README.write_text(rendered, encoding="utf-8", newline="\n")
+    print(f"updated {filled} markers in {README.name} for {login}")
     for key, value in values.items():
         print(f"  {key:<12} {value}")
     return 0

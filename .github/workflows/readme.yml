@@ -1,7 +1,9 @@
 name: Update README
 
-# README.md is generated from README.tpl.md -- edit the template, not the
-# output. This runs daily, and on any push that changes how it renders.
+# README.md is edited by hand. This job only refreshes the numbers between
+# <!--KEY--> ... <!--/KEY--> markers. It runs daily, and right after a push that
+# touches the README or the updater. Its own commits use GITHUB_TOKEN, which
+# does not trigger workflows, so this cannot loop.
 on:
   schedule:
     # 03:17 UTC. Off the hour, because everyone schedules on the hour and
@@ -11,7 +13,7 @@ on:
   push:
     branches: [main]
     paths:
-      - README.tpl.md
+      - README.md
       - scripts/render_readme.py
       - .github/workflows/readme.yml
 

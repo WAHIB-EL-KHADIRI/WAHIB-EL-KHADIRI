@@ -1,5 +1,7 @@
-<!-- Generated from README.tpl.md by scripts/render_readme.py.
-     Edits here are overwritten on the next scheduled run. -->
+<!--
+  Edit this file directly. The daily workflow only rewrites the numbers
+  between KEY and /KEY comment markers; everything else is yours.
+-->
 <p align="center">
   <img src="assets/hero.svg" width="100%" alt="Wahib El Khadiri, Junior Full-Stack Developer from Kenitra, Morocco. Open to work. Pull requests merged into Prefect, SQLFluff, the MCP Rust SDK, RustSec and sktime.">
 </p>
@@ -16,10 +18,10 @@
 <div align="center">
 <table>
   <tr>
-    <td align="center" valign="top" width="170"><h3>16</h3><sub>pull requests merged<br>by other maintainers</sub></td>
-    <td align="center" valign="top" width="170"><h3>27</h3><sub>repositories contributed to<br>that I don't own</sub></td>
-    <td align="center" valign="top" width="170"><h3>422</h3><sub>public commits</sub></td>
-    <td align="center" valign="top" width="170"><h3>7</h3><sub>public projects</sub></td>
+    <td align="center" valign="top" width="170"><h3><!--UPSTREAM_MERGED-->16<!--/UPSTREAM_MERGED--></h3><sub>pull requests merged<br>by other maintainers</sub></td>
+    <td align="center" valign="top" width="170"><h3><!--CONTRIBUTED-->27<!--/CONTRIBUTED--></h3><sub>repositories contributed to<br>that I don't own</sub></td>
+    <td align="center" valign="top" width="170"><h3><!--COMMITS-->422<!--/COMMITS--></h3><sub>public commits</sub></td>
+    <td align="center" valign="top" width="170"><h3><!--REPOS-->7<!--/REPOS--></h3><sub>public projects</sub></td>
   </tr>
 </table>
 </div>
@@ -52,6 +54,7 @@
 | Project | What it does | Built with |
 |---|---|---|
 | **[AgentOS](https://github.com/WAHIB-EL-KHADIRI/AgentOS)** | Runtime for AI agents: journals every LLM exchange and tool result, so a run can be replayed offline. Alpha. | Rust |
+| **[Breath Coach](https://github.com/WAHIB-EL-KHADIRI/breath-coach-presage)** | Desktop breathing coach that reads breathing rate from the webcam with Presage SmartSpectra. Camera only after consent; a number is shown only when the reading is fresh and confident. | Electron · React · TypeScript |
 | **[autofix-safety](https://github.com/WAHIB-EL-KHADIRI/autofix-safety)** | Checks that a linter's `--fix` doesn't break your code. Found data-loss bugs in sqlfluff, found nothing in ruff, and reports both. | Python |
 | **[TaskFlow Pro](https://github.com/WAHIB-EL-KHADIRI/taskflow-pro)** | Task and project management system on a custom MVC. | PHP 8.1 |
 
@@ -67,12 +70,11 @@
 | **[RustSec](https://github.com/rustsec/rustsec)** | 1.9k+ | Documented that `cargo audit` isn't safe to run on untrusted projects ([#1714](https://github.com/rustsec/rustsec/pull/1714)) |
 
 <details>
-<summary><b>11 more merged pull requests</b></summary>
+<summary><b>10 more merged pull requests</b></summary>
 <br>
 
 - **[toqito](https://github.com/vprusso/toqito)**: built depolarizing Kraus operators without a nested loop ([#1921](https://github.com/vprusso/toqito/pull/1921))
 - **[PyScrappy](https://github.com/mldsveda/PyScrappy)**: aligned the GitHub scraper's default result count with the MCP tool ([#82](https://github.com/mldsveda/PyScrappy/pull/82))
-- **[instrumation](https://github.com/abduznik/instrumation)**: handled empty or `None` input in the duplicate-address scanner ([#137](https://github.com/abduznik/instrumation/pull/137))
 - **[myskoda](https://github.com/skodaconnect/myskoda)**: added missing `SoftwareStatus` members ([#641](https://github.com/skodaconnect/myskoda/pull/641))
 - **[opendot](https://github.com/vedaant00/opendot)**: `grep` no longer crashes outside the workspace, and `list_files` honors the ignore set ([#73](https://github.com/vedaant00/opendot/pull/73), [#61](https://github.com/vedaant00/opendot/pull/61))
 - **[thingctx](https://github.com/thingctx/thingctx)**: pinned the remaining GitHub Actions to commit SHAs ([#127](https://github.com/thingctx/thingctx/pull/127))
@@ -119,9 +121,9 @@
 </p>
 
 <p align="center">
-  <sub><b>39</b> pull requests into repositories I don't own:
-  <b>16</b> merged · <b>10</b> open · <b>13</b> closed<br>
-  <b>422</b> commits · <b>25</b> issues · <b>13</b> stars across <b>7</b> projects<br>
-  Public contributions, counted 2026-11-22 by
+  <sub><b><!--UPSTREAM_PRS-->39<!--/UPSTREAM_PRS--></b> pull requests into repositories I don't own:
+  <b><!--UPSTREAM_MERGED-->16<!--/UPSTREAM_MERGED--></b> merged · <b><!--UPSTREAM_OPEN-->10<!--/UPSTREAM_OPEN--></b> open · <b><!--UPSTREAM_CLOSED-->13<!--/UPSTREAM_CLOSED--></b> closed<br>
+  <b><!--COMMITS-->422<!--/COMMITS--></b> commits · <b><!--ISSUES-->25<!--/ISSUES--></b> issues · <b><!--STARS-->13<!--/STARS--></b> stars across <b><!--REPOS-->7<!--/REPOS--></b> projects<br>
+  Public contributions, counted <!--UPDATED-->2026-11-22<!--/UPDATED--> by
   <a href="https://github.com/WAHIB-EL-KHADIRI/WAHIB-EL-KHADIRI/actions/workflows/readme.yml">a daily Action</a></sub>
 </p>
