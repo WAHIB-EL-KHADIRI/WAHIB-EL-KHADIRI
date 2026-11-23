@@ -15,6 +15,13 @@
 
 <h3 align="center">I build full-stack products, and I fix bugs in the open-source tools developers depend on.</h3>
 
+<p align="center">
+  Lately: hardening GitHub Actions release pipelines. Script-injection fixes merged into
+  <a href="https://github.com/PrefectHQ/prefect/pull/22882">Prefect</a> and
+  <a href="https://github.com/sqlfluff/sqlfluff/pull/8375">SQLFluff</a>, and
+  <a href="https://dev.to/wahib_el_khadiri_0/i-read-25-release-pipelines-looking-for-one-bug-four-had-it-3n9e">a write-up of the 25 pipelines I read</a>.
+</p>
+
 <div align="center">
 <table>
   <tr>
